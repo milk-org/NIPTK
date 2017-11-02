@@ -25,6 +25,3 @@
 [submodule "src/ImageStreamIO"]
 	path = src/ImageStreamIO
 	url = https://github.com/niptk-org/ImageStreamIO.git
-[submodule "coronagraphs"]
-	path = coronagraphs
-	url = https://github.com/FALCON-orga/coronagraphs.git
