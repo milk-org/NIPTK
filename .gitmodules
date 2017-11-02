@@ -61,3 +61,12 @@
 [submodule "src/img_reduce"]
 	path = src/img_reduce
 	url = https://github.com/niptk-org/img_reduce
+[submodule "src/statistic"]
+	path = src/statistic
+	url = https://github.com/niptk-org/statistic
+[submodule "src/ZernikePolyn"]
+	path = src/ZernikePolyn
+	url = https://github.com/niptk-org/ZernikePolyn
+[submodule "src/linARfilterPred"]
+	path = src/linARfilterPred
+	url = https://github.com/niptk-org/linARfilterPred
