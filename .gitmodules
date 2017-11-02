@@ -19,3 +19,6 @@
 [submodule "src/src/COREMOD_arith"]
 	path = src/src/COREMOD_arith
 	url = https://github.com/niptk-org/COREMOD_arith.git
+[submodule "src/COREMOD_arith"]
+	path = src/COREMOD_arith
+	url = https://github.com/niptk-org/COREMOD_arith
