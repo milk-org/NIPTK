@@ -19,3 +19,6 @@
 [submodule "src1/COREMOD_iofits"]
 	path = src1/COREMOD_iofits
 	url = https://github.com/niptk-org/COREMOD_iofits
+[submodule "src/COREMOD_iofits"]
+	path = src/COREMOD_iofits
+	url = https://github.com/niptk-org/COREMOD_iofits
