@@ -46,3 +46,18 @@
 [submodule "src/image_basic"]
 	path = src/image_basic
 	url = https://github.com/niptk-org/image_basic
+[submodule "src/psf"]
+	path = src/psf
+	url = https://github.com/niptk-org/psf
+[submodule "src/image_filter"]
+	path = src/image_filter
+	url = https://github.com/niptk-org/image_filter
+[submodule "src/image_format"]
+	path = src/image_format
+	url = https://github.com/niptk-org/image_format
+[submodule "src/image_gen"]
+	path = src/image_gen
+	url = https://github.com/niptk-org/image_gen
+[submodule "src/img_reduce"]
+	path = src/img_reduce
+	url = https://github.com/niptk-org/img_reduce
