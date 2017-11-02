@@ -1,6 +1,3 @@
-[submodule "src/coronagraphs/coronagraphs"]
-	path = src/coronagraphs/coronagraphs
-	url = https://github.com/FALCON-orga/coronagraphs.git
 [submodule "COREMOD_iofits"]
 	path = COREMOD_iofits
 	url = https://github.com/niptk-org/COREMOD_iofits
@@ -28,3 +25,6 @@
 [submodule "src/ImageStreamIO"]
 	path = src/ImageStreamIO
 	url = https://github.com/niptk-org/ImageStreamIO.git
+[submodule "coronagraphs"]
+	path = coronagraphs
+	url = https://github.com/FALCON-orga/coronagraphs.git
