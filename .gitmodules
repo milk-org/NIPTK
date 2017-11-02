@@ -31,3 +31,6 @@
 [submodule "src/conoragraphs"]
 	path = src/conoragraphs
 	url = https://github.com/FALCON-orga/coronagraphs
+[submodule "00CORE"]
+	path = 00CORE
+	url = https://github.com/niptk-org/00CORE
