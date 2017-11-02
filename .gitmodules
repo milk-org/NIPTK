@@ -28,3 +28,6 @@
 [submodule "coronagraphs"]
 	path = coronagraphs
 	url = https://github.com/FALCON-orga/coronagraphs
+[submodule "src/conoragraphs"]
+	path = src/conoragraphs
+	url = https://github.com/FALCON-orga/coronagraphs
