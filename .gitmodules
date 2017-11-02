@@ -40,3 +40,6 @@
 [submodule "src/linopt_imtools"]
 	path = src/linopt_imtools
 	url = https://github.com/niptk-org/linopt_imtools
+[submodule "src/fft"]
+	path = src/fft
+	url = https://github.com/niptk-org/fft
