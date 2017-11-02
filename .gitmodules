@@ -43,3 +43,6 @@
 [submodule "src/fft"]
 	path = src/fft
 	url = https://github.com/niptk-org/fft
+[submodule "src/image_basic"]
+	path = src/image_basic
+	url = https://github.com/niptk-org/image_basic
