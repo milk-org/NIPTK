@@ -37,3 +37,6 @@
 [submodule "src/00CORE"]
 	path = src/00CORE
 	url = https://github.com/niptk-org/00CORE.git
+[submodule "src/linopt_imtools"]
+	path = src/linopt_imtools
+	url = https://github.com/niptk-org/linopt_imtools
