@@ -25,3 +25,6 @@
 [submodule "src/src/ImageStreamIO"]
 	path = src/src/ImageStreamIO
 	url = https://github.com/niptk-org/ImageStreamIO.git
+[submodule "src/ImageStreamIO"]
+	path = src/ImageStreamIO
+	url = https://github.com/niptk-org/ImageStreamIO.git
