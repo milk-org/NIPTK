@@ -34,3 +34,6 @@
 [submodule "00CORE"]
 	path = 00CORE
 	url = https://github.com/niptk-org/00CORE
+[submodule "src/00CORE"]
+	path = src/00CORE
+	url = https://github.com/niptk-org/00CORE.git
