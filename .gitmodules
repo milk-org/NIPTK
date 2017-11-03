@@ -10,18 +10,12 @@
 [submodule "src/COREMOD_memory"]
 	path = src/COREMOD_memory
 	url = https://github.com/niptk-org/COREMOD_memory
-[submodule "src/src/COREMOD_arith"]
-	path = src/src/COREMOD_arith
-	url = https://github.com/niptk-org/COREMOD_arith.git
 [submodule "src/COREMOD_arith"]
 	path = src/COREMOD_arith
 	url = https://github.com/niptk-org/COREMOD_arith
 [submodule "src/COREMOD_tools"]
 	path = src/COREMOD_tools
 	url = https://github.com/niptk-org/COREMOD_tools.git
-[submodule "src/src/ImageStreamIO"]
-	path = src/src/ImageStreamIO
-	url = https://github.com/niptk-org/ImageStreamIO.git
 [submodule "src/ImageStreamIO"]
 	path = src/ImageStreamIO
 	url = https://github.com/niptk-org/ImageStreamIO.git
