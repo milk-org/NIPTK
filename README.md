@@ -4,25 +4,21 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/596968680753486e8146b764644a604c)](https://www.codacy.com/app/oguyon/Cfits?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=oguyon/Cfits&amp;utm_campaign=Badge_Grade)
 
 
-# Nimble Image Processing ToolKit
+# Nimble Image Processing ToolKit (nipTK)
 
 ## Overview
 
 Set of image processing tools and functions accessible through a command line interface (CLI). Holds images in RAM, with image stream support (shared memory with low-latency IPC support).
 
+Written in C, optimized for performance.
 
-Written in C.
-The main is a command line interface (CLI). Source code is in CLIcore.c and CLIcore.h.
-Key data structures (such as the image data structure) are declared in CLIcore.h.
+Executable launches a command line interface (CLI). Type "help" in the CLI to get started.
 
 
 ## Downloading and installing 
 
-You can clone the repository, or download the latest .tar.gz distribution.
 
-
-
-The source code follows the standard git clone steps and GNU build process. On linux :
+The nipTK package follows the standard git clone steps and GNU build process :
 
 	git clone https://github.com/niptk-org/NIPTK
 	git submodule init
@@ -32,7 +28,7 @@ The source code follows the standard git clone steps and GNU build process. On l
 	make
 	make install
 
-Note: On OS X you need to use gcc-mp-5 for opemMP:
+Note: On OS X you need to use gcc-mp-5 for openMP:
 
 	./configure "CC=/opt/local/bin/gcc-mp-5" CPPFLAGS="-I/usr/include/malloc/ -I/opt/local/include/readline" LDFLAGS="-L/opt/local/lib/"
 (Replace "/opt/local/" is the location of your installed libraries. )
