@@ -23,8 +23,11 @@ You can clone the repository, or download the latest .tar.gz distribution.
 
 
 
-The source code follows the standard GNU build process. On linux :
+The source code follows the standard git clone steps and GNU build process. On linux :
 
+	git clone https://github.com/niptk-org/NIPTK
+	git submodule init
+	git submodule update
 	autoreconf -i
 	./configure
 	make
