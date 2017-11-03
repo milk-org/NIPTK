@@ -391,6 +391,7 @@ src/image_format/Makefile \
 src/img_reduce/Makefile \
 src/psf/Makefile \
 src/cudacomp/Makefile \
+src/kdtree/Makefile \
 src/linARfilterPred/Makefile)
 
 
