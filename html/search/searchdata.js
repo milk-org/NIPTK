@@ -8,8 +8,8 @@ var indexSectionsWithContent =
   5: "bfsy",
   6: "y",
   7: "nt",
-  8: "afi",
-  9: "abcfimnopru"
+  8: "f",
+  9: "0bcfilmnoprsuz"
 };
 
 var indexSectionNames =

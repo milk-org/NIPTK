@@ -3,6 +3,7 @@ var image__format_8c =
     [ "BITMAPFILEHEADER", "structBITMAPFILEHEADER.html", "structBITMAPFILEHEADER" ],
     [ "BITMAPINFOHEADER", "structBITMAPINFOHEADER.html", "structBITMAPINFOHEADER" ],
     [ "sImage", "structsImage.html", "structsImage" ],
+    [ "__attribute__", "image__format_8c.html#afd02bb0f6a745c39d5e3417493995c71", null ],
     [ "convert_rawbayerFITStorgbFITS_simple", "image__format_8c.html#a87250e231d815c8206d03507b5702490", null ],
     [ "CR2toFITS", "image__format_8c.html#ad6e3a4cbb0bb3f8e7814bace36380418", null ],
     [ "CR2toFITS_cli", "image__format_8c.html#a8a9cd3db37b67415f0c45199e06ada6b", null ],

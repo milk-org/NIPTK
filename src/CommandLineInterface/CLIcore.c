@@ -22,7 +22,7 @@
 
 #include <stdint.h>
 #include <string.h>
-#include <CLIcore.h>
+#include <CommandLineInterface/CLIcore.h>
 #include <malloc.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -678,7 +678,7 @@ uint_fast16_t RegisterCLIcommand(char *CLIkey, char *CLImodule, int_fast8_t (*CL
  */
 
 
-int_fast8_t main(int argc, char *argv[])
+int_fast8_t runCLI(int argc, char *argv[])
 {
     long i, j;
     int quiet=0;

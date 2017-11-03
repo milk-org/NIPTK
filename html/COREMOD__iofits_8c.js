@@ -1,5 +1,6 @@
 var COREMOD__iofits_8c =
 [
+    [ "__attribute__", "COREMOD__iofits_8c.html#afd02bb0f6a745c39d5e3417493995c71", null ],
     [ "break_cube", "COREMOD__iofits_8c.html#ae0d7354c8cd7a60606f816ec85800e5a", null ],
     [ "break_cube_cli", "COREMOD__iofits_8c.html#a2a03a65f69660604a8c1eee6a7814410", null ],
     [ "check_FITSIO_status", "COREMOD__iofits_8c.html#af6852d06d93eb8b65d6c9d373892a927", null ],

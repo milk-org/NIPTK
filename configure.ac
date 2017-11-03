@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 #
 
-m4_define([PROGNAME], cfitsTK)
+m4_define([PROGNAME], nipTK)
 m4_define([PVERSION], 3.4.00)
 
 AC_INIT([PROGNAME], [PVERSION], [oliv.guyon@gmail.com], [PROGNAME])
@@ -11,7 +11,7 @@ AC_PREREQ(2.61)
 #AC_CONFIG_HEADER([config.h])
 
 # sanity check a file to see if we're really in the build directory
-AC_CONFIG_SRCDIR([src/CLIcore.c])
+AC_CONFIG_SRCDIR([src/CLImain.c])
 
 AC_CONFIG_MACRO_DIR([m4])
 

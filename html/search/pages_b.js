@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_20input',['User input',['../page_userinput.html',1,'index']]]
+  ['statistic',['statistic',['../md_src_statistic_README.html',1,'']]]
 ];

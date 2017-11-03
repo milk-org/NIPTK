@@ -80,10 +80,10 @@ If you use NVIDIA GPUs, install cuda and magma libraries, and add "--enable-cuda
 
 All functions are accessible from the command line interface (CLI). Enter the CLI and type "help" for instructions.
 
-		./bin/cfitsTK
+		./bin/nipTK
 
 
 ## LICENCE
 
 
-[GNU General Public License v3.0]( https://github.com/adaptiveoptics-org/Cfits/blob/master/LICENCE.txt )
+[GNU General Public License v3.0]( https://github.com/niptk-org/nipTK/blob/master/LICENCE.txt )
