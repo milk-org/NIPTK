@@ -73,3 +73,6 @@
 [submodule "src/cudacomp"]
 	path = src/cudacomp
 	url = https://github.com/niptk-org/cudacomp
+[submodule "src/info"]
+	path = src/info
+	url = https://github.com/niptk-org/info
