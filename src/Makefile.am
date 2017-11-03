@@ -1,7 +1,7 @@
 #SUFFIXES = .c .h .y .l
 
 bin_PROGRAMS = cfitsTK
-cfitsTK_SOURCES = CLIcore.c CLIcore.h initmodules.c initmodules.h calc_bison.y calc_flex.l calc.h
+cfitsTK_SOURCES = CLIcore.c CLIcore.h calc_bison.y calc_flex.l calc.h
 cfitsTK_CPPFLAGS = -I@abs_top_srcdir@/src -DCONFIGDIR=\"@abs_top_srcdir@/config\" -DSOURCEDIR=\"@abs_top_srcdir@/src\" -DABSSRCTOPDIR=\"@abs_top_srcdir@\" -fopenmp -ldl
 
 ACLOCAL_AMFLAGS = -I m4
@@ -67,13 +67,13 @@ SUBDIRS += statistic
 cfitsTK_LDADD += statistic/libstatistic.la
 cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/statistic
 
-SUBDIRS += fft
-cfitsTK_LDADD += fft/libfft.la
-cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/fft
-
 SUBDIRS += info
 cfitsTK_LDADD += info/libinfo.la
 cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/info
+
+SUBDIRS += fft
+cfitsTK_LDADD += fft/libfft.la
+cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 
 
 
@@ -92,13 +92,13 @@ SUBDIRS += COREMOD_arith
 cfitsTK_LDADD += COREMOD_arith/libcoremodarith.la
 cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_arith
 
-SUBDIRS += COREMOD_iofits
-cfitsTK_LDADD += COREMOD_iofits/libcoremodiofits.la
-cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_iofits
-
 SUBDIRS += COREMOD_memory
 cfitsTK_LDADD += COREMOD_memory/libcoremodmemory.la
 cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_memory
+
+SUBDIRS += COREMOD_iofits
+cfitsTK_LDADD += COREMOD_iofits/libcoremodiofits.la
+cfitsTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_iofits
 
 SUBDIRS += COREMOD_tools
 cfitsTK_LDADD += COREMOD_tools/libcoremodtools.la

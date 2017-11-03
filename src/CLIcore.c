@@ -81,8 +81,6 @@ static int clock_gettime(int clk_id, struct mach_timespec *t){
 #include <gsl/gsl_rng.h> // for random numbers
 #include <fitsio.h>
 
-#include "initmodules.h"
-
 #include "ImageStreamIO/ImageStreamIO.h"
 #include "00CORE/00CORE.h"
 #include "COREMOD_memory/COREMOD_memory.h"
@@ -1373,9 +1371,6 @@ void main_init()
   strcpy(data.cmd[data.NBcmd].Ccall,"usleep(long tus)");
   data.NBcmd++;
 
-  
-
-  init_modules();
 
   printf("LOADED: %ld modules, %ld commands\n", data.NBmodule, data.NBcmd);
   
