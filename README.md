@@ -3,7 +3,6 @@
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1154/badge)](https://bestpractices.coreinfrastructure.org/projects/1154)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/596968680753486e8146b764644a604c)](https://www.codacy.com/app/oguyon/Cfits?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=oguyon/Cfits&amp;utm_campaign=Badge_Grade)
 
-# date : Nov 3rd.
 
 # Image analysis tools - full development package 
 
@@ -33,24 +32,22 @@ The source code follows the standard git clone steps and GNU build process. On l
 	make
 	make install
 
-On OS X you need to use gcc-mp-5 for opemMP:
+Note: On OS X you need to use gcc-mp-5 for opemMP:
 
 	./configure "CC=/opt/local/bin/gcc-mp-5" CPPFLAGS="-I/usr/include/malloc/ -I/opt/local/include/readline" LDFLAGS="-L/opt/local/lib/"
 (Replace "/opt/local/" is the location of your installed libraries. )
-    make
-    make install
 
 
 
 ## Reporting bugs, issues
 
-Report bugs and issues on [this page]( https://github.com/adaptiveoptics-org/Cfits/issues )
+Report bugs and issues on [this page]( https://github.com/niptk-org/NIPTK/issues )
 
 
 ## Contributing to project
 
 
-See [coding standards]( http://adaptiveoptics-org.github.io/Cfits/html/page_coding_standards.html ) 
+See [coding standards]( http://niptk-org.github.io/NIPTK/html/page_coding_standards.html ) 
 
 
 
@@ -58,7 +55,7 @@ See [coding standards]( http://adaptiveoptics-org.github.io/Cfits/html/page_codi
 
 ## Documentation
 
-[Online documentation]( http://adaptiveoptics-org.github.io/Cfits/ ) 
+[Online documentation]( http://niptk-org.github.io/NIPTK/ ) 
 
 
 ## Libraries
