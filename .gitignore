@@ -8,12 +8,9 @@ README.txt
 *.Po
 *.Plo
 *.bak
-sync
-TBE
-latex/
-*.tex
-*.Plo
 bin/*
+m4/
+config/
 autom4te.cache/*
 notes/
 src/cfits
