@@ -67,9 +67,6 @@
 [submodule "src/PIAACMCsimul"]
 	path = src/PIAACMCsimul
 	url = https://github.com/FALCON-orga/PIAACMCsimul
-[submodule "src/Calc_CLI_info"]
-	path = src/Calc_CLI_info
-	url = https://github.com/niptk-org/Calc_CLI_info.git
 [submodule "src/cudacomp"]
 	path = src/cudacomp
 	url = https://github.com/niptk-org/cudacomp
