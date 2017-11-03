@@ -1,7 +1,7 @@
 #SUFFIXES = .c .h .y .l
 
 bin_PROGRAMS = cfitsTK
-cfitsTK_SOURCES = CLIcore.c CLIcore.h calc_bison.y calc_flex.l calc.h
+cfitsTK_SOURCES = CLIcore.c CLIcore.h CommandLineInterface/calc_bison.y CommandLineInterface/calc_flex.l CommandLineInterface/calc.h
 cfitsTK_CPPFLAGS = -I@abs_top_srcdir@/src -DCONFIGDIR=\"@abs_top_srcdir@/config\" -DSOURCEDIR=\"@abs_top_srcdir@/src\" -DABSSRCTOPDIR=\"@abs_top_srcdir@\" -fopenmp -ldl
 
 ACLOCAL_AMFLAGS = -I m4
@@ -13,9 +13,9 @@ AM_LFLAGS = -i
 ## The contents of this variable are passed to every compilation that invokes the C preprocessor IF target_CPPFLAGS does not exit; it is a list of arguments to the preprocessor. For instance, -I and -D options should be listed here.
 ## AM_CPPFLAGS = -DCONFIGDIR=\"@abs_top_srcdir@/config\"
 
-noinst_HEADERS = calc.h
+noinst_HEADERS = CommandLineInterface/calc.h
 
-BUILT_SOURCES = calc_bison.h
+BUILT_SOURCES = CommandLineInterface/calc_bison.h
 
 
 SUBDIRS = 

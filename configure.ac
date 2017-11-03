@@ -19,7 +19,7 @@ AC_CONFIG_MACRO_DIR([m4])
 
 
 # Init Automake
-AM_INIT_AUTOMAKE([foreign -Wall])
+AM_INIT_AUTOMAKE([subdir-objects foreign -Wall])
 m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 # Init Libtool
 LT_INIT

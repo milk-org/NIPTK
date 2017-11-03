@@ -93,8 +93,8 @@ static int clock_gettime(int clk_id, struct mach_timespec *t){
 
 
 
-#include "calc.h"
-#include "calc_bison.h"
+#include "CommandLineInterface/calc.h"
+#include "CommandLineInterface/calc_bison.h"
 
 
 

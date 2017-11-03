@@ -29,7 +29,7 @@
 #include <signal.h>
 
 
-#include "ImageStruct.h"
+#include "ImageStreamIO/ImageStruct.h"
 
 
 #define PI 3.14159265358979323846264338328
