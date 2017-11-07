@@ -17,7 +17,11 @@ Written in C, optimized for performance.
 
 Executable launches a command line interface (CLI). Type "help" in the CLI to get started.
 
-MILK is ued by [https://github.com/CACAO-org/CACAO](CACAO)
+
+MILK is used by the following packages:
+
+- Compute and Control for Adaptive Optics ([CACAO](https://github.com/CACAO-org/CACAO))
+- future modules YOU can code
 
 
 
