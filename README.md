@@ -6,6 +6,7 @@
 # Multi-purpose Imaging Libraries toolKit (MILK)
 
 *Milk is the primary source of nutrition for infant mammals (Wikipedia)*
+*Milk is used to prepare delicious drinks with cacao (CACAO-org dev team)*
 
 ## Overview
 
@@ -19,9 +20,9 @@ Executable launches a command line interface (CLI). Type "help" in the CLI to ge
 ## Downloading and installing 
 
 
-The nipTK package follows the standard git clone steps and GNU build process :
+The MILK package follows the standard git clone steps and GNU build process :
 
-	git clone https://github.com/niptk-org/NIPTK
+	git clone https://github.com/milk-org/MILK
 	cd NIPTK
 	git submodule init
 	git submodule update
@@ -39,13 +40,13 @@ Note: On OS X you need to use gcc-mp-5 for openMP:
 
 ## Reporting bugs, issues
 
-Report bugs and issues on [this page]( https://github.com/niptk-org/NIPTK/issues )
+Report bugs and issues on [this page]( https://github.com/milk-org/NIPTK/issues )
 
 
 ## Contributing to project
 
 
-See [coding standards]( http://niptk-org.github.io/NIPTK/html/page_coding_standards.html ) 
+See [coding standards]( http://milk-org.github.io/NIPTK/html/page_coding_standards.html ) 
 
 
 
@@ -53,7 +54,7 @@ See [coding standards]( http://niptk-org.github.io/NIPTK/html/page_coding_standa
 
 ## Documentation
 
-[Online documentation]( http://niptk-org.github.io/NIPTK/ ) 
+[Online documentation]( http://milk-org.github.io/MILK/ ) 
 
 
 ## Libraries
@@ -79,10 +80,10 @@ If you use NVIDIA GPUs, install cuda and magma libraries, and add "--enable-cuda
 
 All functions are accessible from the command line interface (CLI). Enter the CLI and type "help" for instructions.
 
-		./bin/nipTK
+		./bin/milk
 
 
 ## LICENCE
 
 
-[GNU General Public License v3.0]( https://github.com/niptk-org/nipTK/blob/master/LICENCE.txt )
+[GNU General Public License v3.0]( https://github.com/milk-org/MILK/blob/master/LICENCE.txt )
