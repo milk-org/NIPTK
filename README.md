@@ -9,6 +9,8 @@
 
 *Milk is used to prepare delicious drinks with cacao (CACAO-org dev team)*
 
+*code your RTC the MILKy way*
+
 ## Overview
 
 Set of image processing tools and functions accessible through a command line interface (CLI). Holds images in RAM, with image stream support (shared memory with low-latency IPC support).
