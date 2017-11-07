@@ -24,7 +24,7 @@ Executable launches a command line interface (CLI). Type "help" in the CLI to ge
 The MILK package follows the standard git clone steps and GNU build process :
 
 	git clone https://github.com/milk-org/MILK
-	cd NIPTK
+	cd MILK
 	git submodule init
 	git submodule update
 	autoreconf -i
