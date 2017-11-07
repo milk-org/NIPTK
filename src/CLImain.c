@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
 
-	printf("WELCOME to nipTK\n\n");
+	printf("WELCOME to milk\n\n");
 	runCLI(argc, argv);
 
 

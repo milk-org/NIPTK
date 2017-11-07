@@ -1,8 +1,8 @@
 #SUFFIXES = .c .h .y .l
 
-bin_PROGRAMS = nipTK
-nipTK_SOURCES = CLImain.c CommandLineInterface/CLIcore.c CommandLineInterface/CLIcore.h CommandLineInterface/calc_bison.y CommandLineInterface/calc_flex.l CommandLineInterface/calc.h
-nipTK_CPPFLAGS = -I@abs_top_srcdir@/src -DCONFIGDIR=\"@abs_top_srcdir@/config\" -DSOURCEDIR=\"@abs_top_srcdir@/src\" -DABSSRCTOPDIR=\"@abs_top_srcdir@\" -fopenmp -ldl
+bin_PROGRAMS = milk
+milk_SOURCES = CLImain.c CommandLineInterface/CLIcore.c CommandLineInterface/CLIcore.h CommandLineInterface/calc_bison.y CommandLineInterface/calc_flex.l CommandLineInterface/calc.h
+milk_CPPFLAGS = -I@abs_top_srcdir@/src -DCONFIGDIR=\"@abs_top_srcdir@/config\" -DSOURCEDIR=\"@abs_top_srcdir@/src\" -DABSSRCTOPDIR=\"@abs_top_srcdir@\" -fopenmp -ldl
 
 ACLOCAL_AMFLAGS = -I m4
 
@@ -19,7 +19,7 @@ BUILT_SOURCES = CommandLineInterface/calc_bison.h
 
 
 SUBDIRS = 
-nipTK_LDADD = 
+milk_LDADD = 
 
 
 ## Modules are built as libraries of convenience
@@ -28,52 +28,52 @@ nipTK_LDADD =
 
 
 SUBDIRS += cudacomp
-nipTK_LDADD += cudacomp/libcudacomp.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/cudacomp
+milk_LDADD += cudacomp/libcudacomp.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/cudacomp
 
 SUBDIRS += psf
-nipTK_LDADD += psf/libpsf.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/psf
+milk_LDADD += psf/libpsf.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/psf
 
 SUBDIRS += img_reduce
-nipTK_LDADD += img_reduce/libimgreduce.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/img_reduce
+milk_LDADD += img_reduce/libimgreduce.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/img_reduce
 
 SUBDIRS += image_format
-nipTK_LDADD += image_format/libimageformat.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/image_format
+milk_LDADD += image_format/libimageformat.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/image_format
 
 SUBDIRS += ZernikePolyn
-nipTK_LDADD += ZernikePolyn/libzernikepolyn.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/ZernikePolyn
+milk_LDADD += ZernikePolyn/libzernikepolyn.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/ZernikePolyn
 
 SUBDIRS += image_basic
-nipTK_LDADD += image_basic/libimagebasic.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/image_basic
+milk_LDADD += image_basic/libimagebasic.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/image_basic
 
 SUBDIRS += image_filter
-nipTK_LDADD += image_filter/libimagefilter.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/image_filter
+milk_LDADD += image_filter/libimagefilter.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/image_filter
 
 SUBDIRS += image_gen
-nipTK_LDADD += image_gen/libimagegen.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/image_gen
+milk_LDADD += image_gen/libimagegen.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/image_gen
 
 SUBDIRS += linopt_imtools
-nipTK_LDADD += linopt_imtools/liblinoptimtools.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/linopt_imtools
+milk_LDADD += linopt_imtools/liblinoptimtools.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/linopt_imtools
 
 SUBDIRS += statistic
-nipTK_LDADD += statistic/libstatistic.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/statistic
+milk_LDADD += statistic/libstatistic.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/statistic
 
 SUBDIRS += info
-nipTK_LDADD += info/libinfo.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/info
+milk_LDADD += info/libinfo.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/info
 
 SUBDIRS += fft
-nipTK_LDADD += fft/libfft.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/fft
+milk_LDADD += fft/libfft.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 
 
 
@@ -89,25 +89,25 @@ nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 
 
 SUBDIRS += COREMOD_arith
-nipTK_LDADD += COREMOD_arith/libcoremodarith.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_arith
+milk_LDADD += COREMOD_arith/libcoremodarith.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_arith
 
 SUBDIRS += COREMOD_memory
-nipTK_LDADD += COREMOD_memory/libcoremodmemory.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_memory
+milk_LDADD += COREMOD_memory/libcoremodmemory.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_memory
 
 SUBDIRS += COREMOD_iofits
-nipTK_LDADD += COREMOD_iofits/libcoremodiofits.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_iofits
+milk_LDADD += COREMOD_iofits/libcoremodiofits.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_iofits
 
 SUBDIRS += COREMOD_tools
-nipTK_LDADD += COREMOD_tools/libcoremodtools.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_tools
+milk_LDADD += COREMOD_tools/libcoremodtools.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_tools
 
 SUBDIRS += 00CORE
-nipTK_LDADD += 00CORE/lib00core.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/00CORE
+milk_LDADD += 00CORE/lib00core.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/00CORE
 
 SUBDIRS += ImageStreamIO
-nipTK_LDADD += ImageStreamIO/libimagestreamio.la
-nipTK_CPPFLAGS += -I@abs_top_srcdir@/src/ImageStreamIO
+milk_LDADD += ImageStreamIO/libimagestreamio.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/ImageStreamIO
