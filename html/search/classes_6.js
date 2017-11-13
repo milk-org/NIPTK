@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['focmask',['FOCMASK',['../structFOCMASK.html',1,'']]]
+  ['logshim_5fconf',['LOGSHIM_CONF',['../structLOGSHIM__CONF.html',1,'']]]
 ];

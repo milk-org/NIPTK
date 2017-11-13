@@ -1,26 +1,11 @@
 var searchData=
 [
-  ['a',['a',['../structap__array.html#ac8261eba1b3ae612e2361a0979eab92b',1,'ap_array']]],
   ['alloc',['alloc',['../structGPUMATMULTCONF.html#ad3b5125d6ddd692de7d80cf5d5bdbc79',1,'GPUMATMULTCONF']]],
   ['alloc_5fmutex',['alloc_mutex',['../kdtree_8c.html#a2420ed5f3bdd6b79a569bf108451f603',1,'kdtree.c']]],
-  ['alpha',['alpha',['../structEXAOSIMCONF.html#a7a2b35259d215d3880e17e8e1536f78d',1,'EXAOSIMCONF']]],
-  ['alpha1h2o',['alpha1H2O',['../AtmosphereModel_8c.html#afffc6c2b72cad4313261f240d110479b',1,'AtmosphereModel.c']]],
-  ['alpha_5farcsec',['alpha_arcsec',['../structEXAOSIMCONF.html#a75071102c0cfa5f050ca1bf04cd8c077',1,'EXAOSIMCONF']]],
-  ['alpha_5fld',['alpha_ld',['../structEXAOSIMCONF.html#aa10dd57b32148dbdd117694ac56f5955',1,'EXAOSIMCONF']]],
-  ['alt',['alt',['../structnrlmsise__input.html#a102b283f83c88896582614654330d4d7',1,'nrlmsise_input']]],
-  ['aosystsim_5flogfunc_5ffname',['AOSYSTSIM_logfunc_fname',['../AOsystSim_8c.html#ae05d8f7d34c0011c91a36a5f03438e75',1,'AOsystSim.c']]],
-  ['aosystsim_5flogfunc_5flevel',['AOSYSTSIM_logfunc_level',['../AOsystSim_8c.html#aa6b4c7df63ddec28c52eaf33e8bee2ec',1,'AOsystSim.c']]],
-  ['aosystsim_5flogfunc_5flevel_5fmax',['AOSYSTSIM_logfunc_level_max',['../AOsystSim_8c.html#ad3b100269f3e4fd97d3f93a3380a793a',1,'AOsystSim.c']]],
-  ['ap',['ap',['../structnrlmsise__input.html#a65c8e469eba33cd0661c438ab2aedcb6',1,'nrlmsise_input']]],
-  ['ap_5fa',['ap_a',['../structnrlmsise__input.html#a60e2d0c5b6b229eaead58be694110631',1,'nrlmsise_input']]],
-  ['apdf',['apdf',['../AtmosphereModel_8c.html#a70bc40d53750a0de2cd687b7172660bc',1,'apdf():&#160;AtmosphereModel.c'],['../nrlmsise-00_8c.html#a70bc40d53750a0de2cd687b7172660bc',1,'apdf():&#160;nrlmsise-00.c']]],
-  ['apt',['apt',['../AtmosphereModel_8c.html#ae2e227d16dce2a7b3989c8f5bcd6cf08',1,'apt():&#160;AtmosphereModel.c'],['../nrlmsise-00_8c.html#ae2e227d16dce2a7b3989c8f5bcd6cf08',1,'apt():&#160;nrlmsise-00.c']]],
   ['array',['array',['../struct____attribute____.html#ae75a8c09b78d55fc927f65bd8e28a071',1,'__attribute__']]],
   ['arraycnt0',['arraycnt0',['../structsavethreadmsg.html#a77ca2f04f1fb7dc8e3b7a4225392dd73',1,'savethreadmsg']]],
   ['arraycnt1',['arraycnt1',['../structsavethreadmsg.html#aae6e853fda5245e19161519f7dc5ad3c',1,'savethreadmsg']]],
   ['arraytime',['arraytime',['../structsavethreadmsg.html#aed56c895e0322351040d43004fa051c5',1,'savethreadmsg']]],
-  ['asphsurfmarray',['ASPHSURFMarray',['../structOPTSYST.html#ab559d2b56f4502be6cc1ea69f5b55f7d',1,'OPTSYST']]],
-  ['asphsurfrarray',['ASPHSURFRarray',['../structOPTSYST.html#aa6ed8c7ac4cc2c0aa47af3b4a585e774',1,'OPTSYST']]],
   ['atime',['atime',['../struct____attribute____.html#a4f0dac59efbb7c18b9f0bde628bfd8ad',1,'__attribute__']]],
   ['atype',['atype',['../struct____attribute____.html#a0ae804df69b605597e7ab91470ee453e',1,'__attribute__']]]
 ];

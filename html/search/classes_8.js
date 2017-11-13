@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['kdhyperrect',['kdhyperrect',['../structkdhyperrect.html',1,'']]],
-  ['kdnode',['kdnode',['../structkdnode.html',1,'']]],
-  ['kdres',['kdres',['../structkdres.html',1,'']]],
-  ['kdtree',['kdtree',['../structkdtree.html',1,'']]]
+  ['res_5fnode',['res_node',['../structres__node.html',1,'']]]
 ];

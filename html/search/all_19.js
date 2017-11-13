@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['y',['Y',['../structEXAOSIMCONF.html#a2d0947575a6e433d152c33142cdffc28',1,'EXAOSIMCONF']]],
-  ['year',['year',['../structnrlmsise__input.html#a32893d62ceca558ccfb7e34789ea9536',1,'nrlmsise_input']]],
   ['ypix',['ypix',['../struct____attribute____.html#a2307ff611d1fd723cb696c3ba8aa2c5b',1,'__attribute__']]],
-  ['ywfs',['Ywfs',['../structEXAOSIMCONF.html#a25fd1d76cbf45bd8c1c219b33e5e8626',1,'EXAOSIMCONF']]],
   ['yy_5faccept',['yy_accept',['../calc__flex_8c.html#a98a7a1233d2cb938e61430bb84b75be4',1,'calc_flex.c']]],
   ['yy_5fact',['yy_act',['../calc__flex_8c.html#a7ffc8c947830757dd87ad202a6823edd',1,'calc_flex.c']]],
   ['yy_5fat_5fbol',['yy_at_bol',['../structyy__buffer__state.html#a9d60c60af6e1a6f69de16871fd64f85f',1,'yy_buffer_state']]],
@@ -53,7 +50,7 @@ var searchData=
   ['yy_5freduce_5fprint',['yy_reduce_print',['../calc__bison_8c.html#a8075fcffa0796f4695376a916de29b2f',1,'calc_bison.c']]],
   ['yy_5fscan_5fbuffer',['yy_scan_buffer',['../calc__flex_8c.html#af81595b30c0da73f9034ffb511db6388',1,'calc_flex.c']]],
   ['yy_5fscan_5fbytes',['yy_scan_bytes',['../calc__flex_8c.html#a9c83e555d1ad2e67332d6cf843b5851b',1,'calc_flex.c']]],
-  ['yy_5fscan_5fstring',['yy_scan_string',['../CLIcore_8c.html#a2456979d39ad6205343f328542fbd437',1,'yy_scan_string(const char *):&#160;CLIcore.c'],['../calc__flex_8c.html#aff5cfd2eb6bb46cdfa10a03b294d78a4',1,'yy_scan_string(yyconst char *yy_str):&#160;calc_flex.c']]],
+  ['yy_5fscan_5fstring',['yy_scan_string',['../calc__flex_8c.html#aff5cfd2eb6bb46cdfa10a03b294d78a4',1,'yy_scan_string(yyconst char *yy_str):&#160;calc_flex.c'],['../CLIcore_8c.html#a2456979d39ad6205343f328542fbd437',1,'yy_scan_string(const char *):&#160;CLIcore.c']]],
   ['yy_5fsize_5ft',['yy_size_t',['../calc__flex_8c.html#ad557845057f187eec4be07e2717d2afa',1,'calc_flex.c']]],
   ['yy_5fstack_5fprint',['yy_stack_print',['../calc__bison_8c.html#a289ccf7ef43d1af713c6e68e20d9a165',1,'calc_bison.c']]],
   ['yy_5fstart',['yy_start',['../calc__flex_8c.html#a2e1e1d9ee4610a6679d49ed8194b00af',1,'calc_flex.c']]],
@@ -85,7 +82,7 @@ var searchData=
   ['yyinput',['yyinput',['../calc__flex_8c.html#abb6f4dc0d3d7e992a7125cf11be23304',1,'calc_flex.c']]],
   ['yyleng',['yyleng',['../calc__flex_8c.html#a1516a44b66d8b9a552569a8cd010214f',1,'calc_flex.c']]],
   ['yylex',['yylex',['../calc__bison_8c.html#aa40b27ae32d6d1ae7160bd6256e08eb8',1,'yylex():&#160;calc_bison.c'],['../calc__flex_8c.html#a9a7bd1b3d14701eb97c03f3ef34deff1',1,'yylex(void):&#160;calc_flex.c']]],
-  ['yylex_5fdestroy',['yylex_destroy',['../CLIcore_8c.html#ab596ae57cdabfb4b298edf3dde7cdf04',1,'yylex_destroy(void):&#160;CLIcore.c'],['../calc__flex_8c.html#ab596ae57cdabfb4b298edf3dde7cdf04',1,'yylex_destroy(void):&#160;calc_flex.c']]],
+  ['yylex_5fdestroy',['yylex_destroy',['../calc__flex_8c.html#ab596ae57cdabfb4b298edf3dde7cdf04',1,'yylex_destroy(void):&#160;calc_flex.c'],['../CLIcore_8c.html#ab596ae57cdabfb4b298edf3dde7cdf04',1,'yylex_destroy(void):&#160;CLIcore.c']]],
   ['yylineno',['yylineno',['../calc__flex_8c.html#a5e36364965360da7b7cdfc2188e0af84',1,'calc_flex.c']]],
   ['yylval',['yylval',['../calc__bison_8c.html#a539b86ee4bb46824a194f22eb69903d9',1,'yylval():&#160;calc_bison.c'],['../calc__bison_8h.html#a539b86ee4bb46824a194f22eb69903d9',1,'yylval():&#160;calc_bison.h']]],
   ['yynerrs',['yynerrs',['../calc__bison_8c.html#a0ea9e3b522e448ac462274fe70e1be82',1,'calc_bison.c']]],

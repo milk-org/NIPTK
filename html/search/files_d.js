@@ -1,22 +1,6 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../00CORE_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../ZernikePolyn_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../statistic_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../psf_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../linopt__imtools_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../linARfilterPred_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../info_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../img__reduce_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../ImageStreamIO_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../image__gen_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../image__format_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../image__filter_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../image__basic_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../fft_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../cudacomp_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../COREMOD__tools_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../COREMOD__memory_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../COREMOD__iofits_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../COREMOD__arith_2LICENSE_8md_2README_8md.html',1,'']]]
+  ['templatemodule_2ec',['templatemodule.c',['../templatemodule_8c.html',1,'']]],
+  ['templatemodule_2eh',['templatemodule.h',['../templatemodule_8h.html',1,'']]],
+  ['templatesourcecode_2emd',['TemplateSourceCode.md',['../TemplateSourceCode_8md.html',1,'']]]
 ];

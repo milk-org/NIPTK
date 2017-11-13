@@ -26,5 +26,6 @@ var searchData=
   ['rl_5fcb',['rl_cb',['../CLIcore_8c.html#a8d0617e7616ff9298b4a0dd6c7111983',1,'CLIcore.c']]],
   ['rlist_5finsert',['rlist_insert',['../kdtree_8c.html#a733da127e26efe613ad86455614244a3',1,'kdtree.c']]],
   ['rms_5fdev',['rms_dev',['../info_8c.html#ab61d8deac2a6b06579a7cb02a063d31a',1,'rms_dev(const char *ID_name):&#160;info.c'],['../info_8h.html#ab61d8deac2a6b06579a7cb02a063d31a',1,'rms_dev(const char *ID_name):&#160;info.c']]],
-  ['rotate_5fcube',['rotate_cube',['../COREMOD__memory_8c.html#a6ec74f3a91aa2fb625947bfecdda0419',1,'rotate_cube(const char *ID_name, const char *ID_out_name, int orientation):&#160;COREMOD_memory.c'],['../COREMOD__memory_8h.html#a6ec74f3a91aa2fb625947bfecdda0419',1,'rotate_cube(const char *ID_name, const char *ID_out_name, int orientation):&#160;COREMOD_memory.c']]]
+  ['rotate_5fcube',['rotate_cube',['../COREMOD__memory_8c.html#a6ec74f3a91aa2fb625947bfecdda0419',1,'rotate_cube(const char *ID_name, const char *ID_out_name, int orientation):&#160;COREMOD_memory.c'],['../COREMOD__memory_8h.html#a6ec74f3a91aa2fb625947bfecdda0419',1,'rotate_cube(const char *ID_name, const char *ID_out_name, int orientation):&#160;COREMOD_memory.c']]],
+  ['runcli',['runCLI',['../CLIcore_8c.html#a167a57a5391116a1a11be9d81b387ea5',1,'runCLI(int argc, char *argv[], char *promptstring):&#160;CLIcore.c'],['../CLIcore_8h.html#a167a57a5391116a1a11be9d81b387ea5',1,'runCLI(int argc, char *argv[], char *promptstring):&#160;CLIcore.c']]]
 ];

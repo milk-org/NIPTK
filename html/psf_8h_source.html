@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>nipTK: src/psf/psf.h Source File</title>
+<title>milk: src/psf/psf.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">nipTK
+   <div id="projectname">milk
    </div>
   </td>
  </tr>
@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('psf_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">float</span> <a class="code" href="psf_8h.html#a1acb7b19d7340fd6419f1b718981dd31">get_sigma_alone</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *ID_name);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="psf_8h.html#ae404b3aa35fec71ae3d9930ae01aded9">extract_psf</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *ID_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *out_name, <span class="keywordtype">long</span> size);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="psf_8h.html#ae404b3aa35fec71ae3d9930ae01aded9">extract_psf</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *ID_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *out_name, <span class="keywordtype">long</span> <a class="code" href="structkdres.html#a7ac4f6162e557c880476f7ca024ce946">size</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">long</span> <a class="code" href="psf_8h.html#ad48bc560526c5286e33b4d91dcb9df4b">extract_psf_photcent</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *ID_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *out_name, <span class="keywordtype">long</span> size);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">long</span> <a class="code" href="psf_8h.html#ad48bc560526c5286e33b4d91dcb9df4b">extract_psf_photcent</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *ID_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *out_name, <span class="keywordtype">long</span> <a class="code" href="structkdres.html#a7ac4f6162e557c880476f7ca024ce946">size</a>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span> <a class="code" href="psf_8h.html#aa47a0a7091240e532f90e3ecd12a385f">psf_variance</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *ID_out_m, <span class="keyword">const</span> <span class="keywordtype">char</span> *ID_out_v, <span class="keyword">const</span> <span class="keywordtype">char</span> *options);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -179,6 +179,7 @@ $(document).ready(function(){initNavTree('psf_8h_source.html','');});
 <div class="ttc" id="psf_8h_html_aba2c7db26ff4f6ea263776a570d75e6f"><div class="ttname"><a href="psf_8h.html#aba2c7db26ff4f6ea263776a570d75e6f">PSF_finddiskcent_alone</a></div><div class="ttdeci">int PSF_finddiskcent_alone(const char *ID_name, float rad)</div><div class="ttdef"><b>Definition:</b> psf.c:247</div></div>
 <div class="ttc" id="psf_8h_html_af5ba2b7ad4e446d1a19185eee7bf700f"><div class="ttname"><a href="psf_8h.html#af5ba2b7ad4e446d1a19185eee7bf700f">PSF_coaddbest</a></div><div class="ttdeci">long PSF_coaddbest(const char *IDcin_name, const char *IDout_name, float r_pix)</div><div class="ttdef"><b>Definition:</b> psf.c:1348</div></div>
 <div class="ttc" id="psf_8h_html_a7b2a68d6bd854967b576f9d97fa09867"><div class="ttname"><a href="psf_8h.html#a7b2a68d6bd854967b576f9d97fa09867">PSF_sequence_measure</a></div><div class="ttdeci">int PSF_sequence_measure(const char *IDin_name, float PSFsizeEst, const char *outfname)</div><div class="ttdef"><b>Definition:</b> psf.c:1405</div></div>
+<div class="ttc" id="structkdres_html_a7ac4f6162e557c880476f7ca024ce946"><div class="ttname"><a href="structkdres.html#a7ac4f6162e557c880476f7ca024ce946">kdres::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> kdtree.c:87</div></div>
 <div class="ttc" id="psf_8h_html_ad28b90e75ad1ccab94b67671e4d595f7"><div class="ttname"><a href="psf_8h.html#ad28b90e75ad1ccab94b67671e4d595f7">init_psf</a></div><div class="ttdeci">int_fast8_t init_psf()</div><div class="ttdef"><b>Definition:</b> psf.c:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -186,7 +187,7 @@ $(document).ready(function(){initNavTree('psf_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1d8bbc4c9e8585fb3b55cb602a75e682.html">psf</a></li><li class="navelem"><a class="el" href="psf_8h.html">psf.h</a></li>
-    <li class="footer">Generated on Fri Nov 3 2017 08:38:11 for nipTK by
+    <li class="footer">Generated on Sun Nov 12 2017 23:14:16 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

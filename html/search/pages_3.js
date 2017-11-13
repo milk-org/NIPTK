@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fft',['fft',['../md_src_fft_README.html',1,'']]]
+  ['installation',['Installation',['../page_installation.html',1,'']]]
 ];

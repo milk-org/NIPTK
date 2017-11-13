@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>nipTK: src/CLIcore.c File Reference</title>
+<title>milk: src/CommandLineInterface/CLIcore.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">nipTK
+   <div id="projectname">milk
    </div>
   </td>
  </tr>
@@ -187,10 +187,10 @@ Functions</h2></td></tr>
 <tr class="separator:a8d0617e7616ff9298b4a0dd6c7111983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a097efcf1913161adeffaf98921d0f5a5"><td class="memItemLeft" align="right" valign="top">uint_fast16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a097efcf1913161adeffaf98921d0f5a5">RegisterCLIcommand</a> (char *CLIkey, char *CLImodule, int_fast8_t(*CLIfptr)(), char *CLIinfo, char *CLIsyntax, char *CLIexample, char *CLICcall)</td></tr>
 <tr class="separator:a097efcf1913161adeffaf98921d0f5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced9481495831c1e6eabb4426225d322"><td class="memItemLeft" align="right" valign="top">int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#aced9481495831c1e6eabb4426225d322">main</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:aced9481495831c1e6eabb4426225d322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command Line Interface (CLI) main<br />
-.  <a href="#aced9481495831c1e6eabb4426225d322">More...</a><br /></td></tr>
-<tr class="separator:aced9481495831c1e6eabb4426225d322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167a57a5391116a1a11be9d81b387ea5"><td class="memItemLeft" align="right" valign="top">int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a167a57a5391116a1a11be9d81b387ea5">runCLI</a> (int argc, char *argv[], char *promptstring)</td></tr>
+<tr class="memdesc:a167a57a5391116a1a11be9d81b387ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command Line Interface (CLI) main<br />
+.  <a href="#a167a57a5391116a1a11be9d81b387ea5">More...</a><br /></td></tr>
+<tr class="separator:a167a57a5391116a1a11be9d81b387ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab547559fc45f1fdbdd9d61c41ea621b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#ab547559fc45f1fdbdd9d61c41ea621b1">CLI_checkarg0</a> (int argnum, int argtype, int <a class="el" href="image__basic_8c.html#a8bb845778df5ade66dd9af426128a622">errmsg</a>)</td></tr>
 <tr class="separator:ab547559fc45f1fdbdd9d61c41ea621b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfa3a12412c06fe66437c5f77f066fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#acfa3a12412c06fe66437c5f77f066fa0">CLI_checkarg</a> (int argnum, int argtype)</td></tr>
@@ -226,7 +226,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ae5371cd7e46f19a56efdff432345b508"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#ae5371cd7e46f19a56efdff432345b508">Listimfile</a> = 0</td></tr>
 <tr class="separator:ae5371cd7e46f19a56efdff432345b508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9842752e03b4de9b4593f1a3b34364ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDATA.html">DATA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a9842752e03b4de9b4593f1a3b34364ab">data</a></td></tr>
-<tr class="memdesc:a9842752e03b4de9b4593f1a3b34364ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">System includes.  <a href="#a9842752e03b4de9b4593f1a3b34364ab">More...</a><br /></td></tr>
 <tr class="separator:a9842752e03b4de9b4593f1a3b34364ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8adb30f4f6669f927fd9232f686c637b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a8adb30f4f6669f927fd9232f686c637b">line</a></td></tr>
 <tr class="separator:a8adb30f4f6669f927fd9232f686c637b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,7 +242,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>main C file </p>
-<p>Contains <a class="el" href="CLIcore_8c.html#aced9481495831c1e6eabb4426225d322" title="Command Line Interface (CLI) main . ">main()</a></p>
+<p>Contains <a class="el" href="CLImain_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a></p>
 <dl class="section author"><dt>Author</dt><dd>Olivier Guyon </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Aug 2 2017 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -795,39 +794,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aced9481495831c1e6eabb4426225d322"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int_fast8_t main </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Command Line Interface (CLI) main<br />
-. </p>
-<p>uses readline to read user input<br />
-parsing done with bison and flex </p>
-<p>becomes 1 after startup</p>
-<p>If fifo is on and file CLIstatup.txt exists, load it </p>
-
-</div>
-</div>
 <a class="anchor" id="a5394e0be8c8a46c283f5b905ce8f676c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -968,6 +934,45 @@ parsing done with bison and flex </p>
 </div><div class="memdoc">
 
 <p>Readline callback. </p>
+
+</div>
+</div>
+<a class="anchor" id="a167a57a5391116a1a11be9d81b387ea5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int_fast8_t runCLI </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>promptstring</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Command Line Interface (CLI) main<br />
+. </p>
+<p>uses readline to read user input<br />
+parsing done with bison and flex </p>
+<p>becomes 1 after startup</p>
+<p>If fifo is on and file CLIstatup.txt exists, load it </p>
 
 </div>
 </div>
@@ -1203,9 +1208,6 @@ parsing done with bison and flex </p>
       </table>
 </div><div class="memdoc">
 
-<p>System includes. </p>
-<p>External libraries </p>
-
 </div>
 </div>
 <a class="anchor" id="a2cd34bea18a071eca4434d14ad84fb76"></a>
@@ -1321,8 +1323,8 @@ parsing done with bison and flex </p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="CLIcore_8c.html">CLIcore.c</a></li>
-    <li class="footer">Generated on Fri Nov 3 2017 08:38:11 for nipTK by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_100645d6fa43bdf6aa49bbcbad19d7c2.html">CommandLineInterface</a></li><li class="navelem"><a class="el" href="CLIcore_8c.html">CLIcore.c</a></li>
+    <li class="footer">Generated on Sun Nov 12 2017 23:14:16 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

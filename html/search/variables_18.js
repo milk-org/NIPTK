@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['y',['Y',['../structEXAOSIMCONF.html#a2d0947575a6e433d152c33142cdffc28',1,'EXAOSIMCONF']]],
-  ['year',['year',['../structnrlmsise__input.html#a32893d62ceca558ccfb7e34789ea9536',1,'nrlmsise_input']]],
   ['ypix',['ypix',['../struct____attribute____.html#a2307ff611d1fd723cb696c3ba8aa2c5b',1,'__attribute__']]],
-  ['ywfs',['Ywfs',['../structEXAOSIMCONF.html#a25fd1d76cbf45bd8c1c219b33e5e8626',1,'EXAOSIMCONF']]],
   ['yy_5faccept',['yy_accept',['../calc__flex_8c.html#a98a7a1233d2cb938e61430bb84b75be4',1,'calc_flex.c']]],
   ['yy_5fact',['yy_act',['../calc__flex_8c.html#a7ffc8c947830757dd87ad202a6823edd',1,'calc_flex.c']]],
   ['yy_5fat_5fbol',['yy_at_bol',['../structyy__buffer__state.html#a9d60c60af6e1a6f69de16871fd64f85f',1,'yy_buffer_state']]],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['psf_2ec',['psf.c',['../psf_8c.html',1,'']]],
-  ['psf_2eh',['psf.h',['../psf_8h.html',1,'']]]
+  ['statistic_2ec',['statistic.c',['../statistic_8c.html',1,'']]],
+  ['statistic_2eh',['statistic.h',['../statistic_8h.html',1,'']]]
 ];

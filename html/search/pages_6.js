@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modules',['Modules',['../page_modules.html',1,'']]]
+  ['news',['News',['../page_news.html',1,'']]]
 ];

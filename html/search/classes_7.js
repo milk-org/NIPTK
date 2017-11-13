@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gpumatmultconf',['GPUMATMULTCONF',['../structGPUMATMULTCONF.html',1,'']]]
+  ['module',['MODULE',['../structMODULE.html',1,'']]]
 ];

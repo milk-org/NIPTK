@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['logshim_5fconf',['LOGSHIM_CONF',['../structLOGSHIM__CONF.html',1,'']]]
+  ['savethreadmsg',['savethreadmsg',['../structsavethreadmsg.html',1,'']]],
+  ['simage',['sImage',['../structsImage.html',1,'']]],
+  ['symrec',['symrec',['../structsymrec.html',1,'']]]
 ];

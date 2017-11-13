@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['user_20input',['User input',['../page_userinput.html',1,'']]],
   ['ui16',['UI16',['../struct____attribute____.html#a1647f690190cc0dbbb107d196a09d107',1,'__attribute__']]],
   ['ui32',['UI32',['../struct____attribute____.html#a6a742278bb774326d8098eb2ba3ee9e1',1,'__attribute__']]],
   ['ui64',['UI64',['../struct____attribute____.html#a818f9dcec0b65b14ded26e6f02dd316c',1,'__attribute__']]],
