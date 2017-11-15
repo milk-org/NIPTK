@@ -2,6 +2,7 @@ var NAVTREE =
 [
   [ "milk", "index.html", [
     [ "Outline", "index.html", null ],
+    [ "Getting Started", "page_milk_GettingStarted.html", null ],
     [ "News", "page_news.html", null ],
     [ "milk modules", "page_milk_Modules.html", "page_milk_Modules" ],
     [ "Coding Standards", "page_coding_standards.html", "page_coding_standards" ],
@@ -43,7 +44,7 @@ var NAVTREEINDEX =
 "image__basic_8c.html#ab79e66d436d823a0e92ed00f82e36ba7",
 "img__reduce_8c.html#a4a5179709c35c4c2396c40770cef8634",
 "linopt__imtools_8h.html#aeed040346b9c664de625ba1a04fed869",
-"structTCP__BUFFER__METADATA.html#aa44311fef5fa11074406a4079b92de6d"
+"structTCP__BUFFER__METADATA.html#a36c43a16ec900e6761222e7f16fc64a1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

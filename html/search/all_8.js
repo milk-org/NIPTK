@@ -24,5 +24,6 @@ var searchData=
   ['gpudevice',['GPUdevice',['../structGPUMATMULTCONF.html#af46435d16015959a15f0b157c9d4bdb6',1,'GPUMATMULTCONF']]],
   ['gpuinit',['gpuinit',['../structGPUMATMULTCONF.html#a6ea3e8d83269d0910b4228fa433532d9',1,'GPUMATMULTCONF']]],
   ['gpuloadcmat',['GPUloadCmat',['../cudacomp_8c.html#a3ac450b18f8301d2c3f0ad5d003f4acf',1,'GPUloadCmat(int index):&#160;cudacomp.c'],['../cudacomp_8h.html#a3ac450b18f8301d2c3f0ad5d003f4acf',1,'GPUloadCmat(int index):&#160;cudacomp.c']]],
-  ['gpumatmultconf',['GPUMATMULTCONF',['../structGPUMATMULTCONF.html',1,'GPUMATMULTCONF'],['../cudacomp_8c.html#a94d486cdc838f866f7a80cc61bbd74fb',1,'gpumatmultconf():&#160;cudacomp.c']]]
+  ['gpumatmultconf',['GPUMATMULTCONF',['../structGPUMATMULTCONF.html',1,'GPUMATMULTCONF'],['../cudacomp_8c.html#a94d486cdc838f866f7a80cc61bbd74fb',1,'gpumatmultconf():&#160;cudacomp.c']]],
+  ['getting_20started',['Getting Started',['../page_milk_GettingStarted.html',1,'']]]
 ];
