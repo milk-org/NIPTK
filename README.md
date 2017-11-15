@@ -1,5 +1,5 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-[![Build Status](https://travis-ci.org/niptk-org/NIPTK.svg?branch=master)](https://travis-ci.org/niptk-org/NIPTK)
+[![Build Status](https://travis-ci.org/niptk-org/NIPTK.svg?branch=master)](https://travis-ci.org/MILK-org/MILK)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/596968680753486e8146b764644a604c)](https://www.codacy.com/app/oguyon/Cfits?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=oguyon/Cfits&amp;utm_campaign=Badge_Grade)
 
 
@@ -54,13 +54,13 @@ Note: On OS X you need to use gcc-mp-5 for openMP:
 
 ## Reporting bugs, issues
 
-Report bugs and issues on [this page]( https://github.com/milk-org/NIPTK/issues )
+Report bugs and issues on [this page]( https://github.com/milk-org/MILK/issues )
 
 
 ## Contributing to project
 
 
-See [coding standards]( http://milk-org.github.io/NIPTK/html/page_coding_standards.html ) 
+See [coding standards]( http://milk-org.github.io/MILK/html/page_coding_standards.html ) 
 
 
 
@@ -68,7 +68,7 @@ See [coding standards]( http://milk-org.github.io/NIPTK/html/page_coding_standar
 
 ## Documentation
 
-[Online documentation]( http://milk-org.github.io/MILK/ ) 
+[Online documentation]( http://milk-org.github.io/MILK/html/index.html ) 
 
 
 ## Libraries
