@@ -3,9 +3,9 @@
 #
 
 m4_define([PROGNAME], milk)
-m4_define([PVERSION], 3.4.00)
+m4_define([PVERSION], 0.1.00)
 
-AC_INIT([PROGNAME], [PVERSION], [oliv.guyon@gmail.com], [PROGNAME])
+AC_INIT([PROGNAME], [PVERSION], [https://github.com/milk-org/MILK/issues], [PROGNAME])
 
 AC_PREREQ(2.61)
 #AC_CONFIG_HEADER([config.h])
