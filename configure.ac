@@ -349,6 +349,7 @@ if test  "$magmaval" = "yes"; then
 	MAGMA_LIBS="-lmagma "
 	MAGMA_CFLAGS="-DADD_ -I/usr/local/magma/include/"
 	MAGMA_LDFLAGS="-L/usr/local/magma/lib/"
+#	PKG_CHECK_MODULES([MAGMA], [magma])  # does not work on some systems ... (.pc file not created during magma install)
 	AC_DEFINE([HAVE_MAGMA],[1],[Defined if MAGMA should be used])
 	eval "ARRAY${N}='-D_MAGMA'"
     N=`expr $N + 1`
