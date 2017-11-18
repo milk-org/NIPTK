@@ -1,3 +1,7 @@
+dist: trusty
+sudo: false
+
+
 language: C
 
 before_install:
