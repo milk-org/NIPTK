@@ -58,11 +58,24 @@
 
 ## Developper's tips
 
-To get latest modules:
+To get latest modules (master branches) :
 
 	git submodule foreach "(git checkout master; git pull)"
 
+To get latest modules (dev branches) :
 
+	git submodule foreach "(git checkout dev; git pull)"
+
+
+When developing, work in dev branch and set branch to dev in all submodules.
+
+
+To synchronize master to latest dev:
+	
+	git submodule foreach "(git checkout master; git merge dev)"
+	git checkout master
+	git merge dev
+	
 
 */
 
