@@ -346,6 +346,7 @@ if test "$magmaval" == "no"; then
 fi
 
 if test  "$magmaval" = "yes"; then
+## next 3 lines superseded by pkg-config / PKG_CHECK_MODULES
 #	MAGMA_LIBS="-lmagma "
 #	MAGMA_CFLAGS="-DADD_ -I/usr/local/magma/include/"
 #	MAGMA_LDFLAGS="-L/usr/local/magma/lib/"
@@ -356,6 +357,7 @@ if test  "$magmaval" = "yes"; then
     LIBS="$LIBS $MAGMA_LIBS"
     LDFLAGS="$LDFLAGS $MAGMA_LDFLAGS"
     CFLAGS="$CFLAGS $MAGMA_CFLAGS"
+## next line superseded by pkg-config / PKG_CHECK_MODULES
 #    LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L/usr/local/magma/lib/"
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L$MAGMA_INSTALL_PATH/lib"
 fi
