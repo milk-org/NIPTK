@@ -1,5 +1,5 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-[![Build Status](https://travis-ci.org/CACAO-org/CACAO.svg?branch=master)](https://travis-ci.org/MILK-org/MILK)
+[![Build Status](https://travis-ci.org/milk-org/MILK.svg?branch=master)](https://travis-ci.org/milk-org/MILK)
 
 
 # Multi-purpose Imaging Libraries toolKit (MILK)
