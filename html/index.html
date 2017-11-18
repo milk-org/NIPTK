@@ -153,12 +153,19 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a class="el" href="page_module_statistic.html">Module statistic</a></li>
 </ul>
 <h2>Developper's tips</h2>
-<p>To get latest modules: </p><pre class="fragment">git submodule foreach "(git checkout master; git pull)"</pre> </div></div><!-- contents -->
+<p>To get latest modules (master branches) : </p><pre class="fragment">git submodule foreach "(git checkout master; git pull)"
+</pre><p>To get latest modules (dev branches) : </p><pre class="fragment">git submodule foreach "(git checkout dev; git pull)"
+</pre><p>When developing, work in dev branch and set branch to dev in all submodules.</p>
+<p>To synchronize master to latest dev: </p><pre class="fragment">git submodule foreach "(git checkout master; git merge dev)"
+git checkout master
+git merge dev
+git submodule foreach "(git checkout master; git push)"
+git push</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 17 2017 17:13:52 for milk by
+    <li class="footer">Generated on Sat Nov 18 2017 13:21:07 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

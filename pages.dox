@@ -56,6 +56,7 @@
 - @ref page_module_statistic
 
 
+
 ## Developper's tips
 
 To get latest modules (master branches) :
@@ -75,7 +76,8 @@ To synchronize master to latest dev:
 	git submodule foreach "(git checkout master; git merge dev)"
 	git checkout master
 	git merge dev
-	
+	git submodule foreach "(git checkout master; git push)"
+	git push
 
 */
 
