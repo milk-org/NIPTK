@@ -9,6 +9,7 @@ before_install:
 script:
 - autoreconf -i
 - ./configure
+- export LDFLAGS="-Wl,--no-as-needed"
 - make
 - make install
 
