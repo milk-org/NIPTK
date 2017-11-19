@@ -119,6 +119,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ul>
 <h2>Programmer's Guide</h2>
 <ul>
+<li><a class="el" href="page_WorkingWithGit.html">Working with git</a></li>
 <li><a class="el" href="page_coding_standards.html">Coding Standards</a><ul>
 <li><a class="el" href="page_Compilation.html">Compilation</a></li>
 <li><a class="el" href="page_ModuleFiles.html">Module Files</a></li>
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a class="el" href="page_module_COREMOD_memory.html">Module COREMOD_memory</a></li>
 <li><a class="el" href="page_module_COREMOD_iofits.html">Module COREMOD_iofits</a></li>
 <li><a class="el" href="page_module_COREMOD_tools.html">Module COREMOD_tools</a></li>
-<li>page_module_COREMOD_arith</li>
+<li><a class="el" href="page_module_COREMOD_arith.html">Module COREMOD_arith</a></li>
 <li><a class="el" href="page_module_CommandLineInterface.html">Module CommandLineInterface</a></li>
 <li><a class="el" href="page_module_ImageStreamIO.html">Module ImageStreamIO</a></li>
 <li><a class="el" href="page_module_ZernikePolyn.html">Module ZernikePolyn</a></li>
@@ -150,22 +151,14 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a class="el" href="page_module_linARfilterPred.html">Module linARfilterPred</a></li>
 <li><a class="el" href="page_module_linopt_imtools.html">Module linopt_imtools</a></li>
 <li><a class="el" href="page_module_psf.html">Module psf</a></li>
-<li><a class="el" href="page_module_statistic.html">Module statistic</a></li>
+<li><a class="el" href="page_module_statistic.html">Module statistic</a> </li>
 </ul>
-<h2>Developper's tips</h2>
-<p>To get latest modules (master branches) : </p><pre class="fragment">git submodule foreach "(git checkout master; git pull)"
-</pre><p>To get latest modules (dev branches) : </p><pre class="fragment">git submodule foreach "(git checkout dev; git pull)"
-</pre><p>When developing, work in dev branch and set branch to dev in all submodules.</p>
-<p>To synchronize master to latest dev: </p><pre class="fragment">git submodule foreach "(git checkout master; git merge dev)"
-git checkout master
-git merge dev
-git submodule foreach "(git checkout master; git push)"
-git push</pre> </div></div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 18 2017 13:21:07 for milk by
+    <li class="footer">Generated on Sun Nov 19 2017 10:36:01 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

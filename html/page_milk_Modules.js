@@ -4,6 +4,7 @@ var page_milk_Modules =
     [ "Module COREMOD_memory", "page_module_COREMOD_memory.html", null ],
     [ "Module COREMOD_iofits", "page_module_COREMOD_iofits.html", null ],
     [ "Module COREMOD_tools", "page_module_COREMOD_tools.html", null ],
+    [ "Module COREMOD_arith", "page_module_COREMOD_arith.html", null ],
     [ "Module CommandLineInterface", "page_module_CommandLineInterface.html", null ],
     [ "Module ImageStreamIO", "page_module_ImageStreamIO.html", null ],
     [ "Module ZernikePolyn", "page_module_ZernikePolyn.html", null ],
