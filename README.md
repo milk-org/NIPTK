@@ -1,9 +1,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-[![Build Status](https://travis-ci.org/niptk-org/NIPTK.svg?branch=master)](https://travis-ci.org/MILK-org/MILK)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/596968680753486e8146b764644a604c)](https://www.codacy.com/app/oguyon/Cfits?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=oguyon/Cfits&amp;utm_campaign=Badge_Grade)
 
 
-# Multi-purpose Imaging Libraries toolKit (MILK)
+# Multi-purpose Imaging Libraries toolKit (milk)
 
 *Milk is the primary source of nutrition for infant mammals (Wikipedia)*
 
@@ -54,13 +52,13 @@ Note: On OS X you need to use gcc-mp-5 for openMP:
 
 ## Reporting bugs, issues
 
-Report bugs and issues on [this page]( https://github.com/milk-org/MILK/issues )
+Report bugs and issues on [this page]( https://github.com/milk-org/milk/issues )
 
 
 ## Contributing to project
 
 
-See [coding standards]( http://milk-org.github.io/MILK/html/page_coding_standards.html ) 
+See [coding standards]( http://milk-org.github.io/milk/html/page_coding_standards.html ) 
 
 
 
@@ -68,7 +66,7 @@ See [coding standards]( http://milk-org.github.io/MILK/html/page_coding_standard
 
 ## Documentation
 
-[Online documentation]( http://milk-org.github.io/MILK/html/index.html ) 
+[Online documentation]( http://milk-org.github.io/milk/html/index.html ) 
 
 
 ## Libraries
@@ -100,4 +98,4 @@ All functions are accessible from the command line interface (CLI). Enter the CL
 ## LICENCE
 
 
-[GNU General Public License v3.0]( https://github.com/milk-org/MILK/blob/master/LICENCE.txt )
+[GNU General Public License v3.0]( https://github.com/milk-org/milk/blob/master/LICENCE.txt )
