@@ -3,11 +3,11 @@
 
 # Multi-purpose Imaging Libraries toolKit (milk)
 
-*Milk is the primary source of nutrition for infant mammals (Wikipedia)*
+*milk is the primary source of nutrition for infant mammals (Wikipedia)*
 
-*Milk is used to prepare delicious drinks with cacao (CACAO-org dev team)*
+*milk is used to prepare delicious drinks with cacao (cacao-org dev team)*
 
-*code your RTC the MILKy way*
+*code your RTC the milky way*
 
 ## Overview
 
