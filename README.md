@@ -1,14 +1,17 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/milk-org/MILK.svg?branch=master)](https://travis-ci.org/milk-org/MILK)
+=======
+>>>>>>> dev
 
 
-# Multi-purpose Imaging Libraries toolKit (MILK)
+# Multi-purpose Imaging Libraries toolKit (milk)
 
-*Milk is the primary source of nutrition for infant mammals (Wikipedia)*
+*milk is the primary source of nutrition for infant mammals (Wikipedia)*
 
-*Milk is used to prepare delicious drinks with cacao (CACAO-org dev team)*
+*milk is used to prepare delicious drinks with cacao (cacao-org dev team)*
 
-*code your RTC the MILKy way*
+*code your RTC the milky way*
 
 ## Overview
 
@@ -21,11 +24,8 @@ Executable launches a command line interface (CLI). Type "help" in the CLI to ge
 
 MILK is used by the following packages:
 
-- Compute and Control for Adaptive Optics ([CACAO](https://github.com/CACAO-org/CACAO))
-- Coronagraph Design ([FALCON](https://github.com/FALCON-orga/FALCON))
-- Optics Propagation ([WOMAT](https://github.com/AtmoTurbu/WOMAT))
-- Transit Light Curve ([TRANSIT](https://github.com/transitLC/TRANSIT))
-- SCExAO instrument control ([SCExAO](https://github.com/SCExAO-RTS-org/SCExAO))
+- Compute and Control for Adaptive Optics ([cacao](https://github.com/cacao-org/cacao))
+- Coronagraph Optimization For Exoplanets Exploration ([coffee](https://github.com/coffee-org/coffee))
 - future modules YOU can code
 
 
@@ -35,8 +35,8 @@ MILK is used by the following packages:
 
 The MILK package follows the standard git clone steps and GNU build process :
 
-	git clone https://github.com/milk-org/MILK
-	cd MILK
+	git clone https://github.com/milk-org/milk
+	cd milk
 	git submodule init
 	git submodule update
 	autoreconf -i
@@ -53,13 +53,13 @@ Note: On OS X you need to use gcc-mp-5 for openMP:
 
 ## Reporting bugs, issues
 
-Report bugs and issues on [this page]( https://github.com/milk-org/MILK/issues )
+Report bugs and issues on [this page]( https://github.com/milk-org/milk/issues )
 
 
 ## Contributing to project
 
 
-See [coding standards]( http://milk-org.github.io/MILK/html/page_coding_standards.html ) 
+See [coding standards]( http://milk-org.github.io/milk/html/page_coding_standards.html ) 
 
 
 
@@ -67,7 +67,7 @@ See [coding standards]( http://milk-org.github.io/MILK/html/page_coding_standard
 
 ## Documentation
 
-[Online documentation]( http://milk-org.github.io/MILK/html/index.html ) 
+[Online documentation]( http://milk-org.github.io/milk/html/index.html ) 
 
 
 ## Libraries
@@ -99,4 +99,4 @@ All functions are accessible from the command line interface (CLI). Enter the CL
 ## LICENCE
 
 
-[GNU General Public License v3.0]( https://github.com/milk-org/MILK/blob/master/LICENCE.txt )
+[GNU General Public License v3.0]( https://github.com/milk-org/milk/blob/master/LICENCE.txt )
