@@ -31,8 +31,8 @@ MILK is used by the following packages:
 
 The MILK package follows the standard git clone steps and GNU build process :
 
-	git clone https://github.com/milk-org/MILK
-	cd MILK
+	git clone https://github.com/milk-org/milk
+	cd milk
 	git submodule init
 	git submodule update
 	autoreconf -i
