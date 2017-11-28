@@ -21,7 +21,7 @@ Executable launches a command line interface (CLI). Type "help" in the CLI to ge
 MILK is used by the following packages:
 
 - Compute and Control for Adaptive Optics ([cacao](https://github.com/cacao-org/cacao))
-- Coronagraph Optimization For Exoplanets Exploration ([coffee](https://github.com/coffee-rga/coffee))
+- Coronagraph Optimization For Exoplanets Exploration ([coffee](https://github.com/coffee-org/coffee))
 - Optics Propagation ([WOMAT](https://github.com/AtmoTurbu/WOMAT))
 - Transit Light Curve ([TRANSIT](https://github.com/transitLC/TRANSIT))
 - SCExAO instrument control ([SCExAO](https://github.com/SCExAO-RTS-org/SCExAO))
