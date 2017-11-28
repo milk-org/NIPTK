@@ -1,9 +1,4 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-<<<<<<< HEAD
-[![Build Status](https://travis-ci.org/milk-org/MILK.svg?branch=master)](https://travis-ci.org/milk-org/MILK)
-=======
->>>>>>> dev
-
 
 # Multi-purpose Imaging Libraries toolKit (milk)
 
