@@ -19,5 +19,6 @@ var searchData=
   ['readme_2emd',['README.md',['../COREMOD__tools_2README_8md.html',1,'']]],
   ['readme_2emd',['README.md',['../COREMOD__memory_2README_8md.html',1,'']]],
   ['readme_2emd',['README.md',['../COREMOD__iofits_2README_8md.html',1,'']]],
+  ['readme_2emd',['README.md',['../COREMOD__arith_2README_8md.html',1,'']]],
   ['readme_2emd',['README.md',['../CommandLineInterface_2README_8md.html',1,'']]]
 ];

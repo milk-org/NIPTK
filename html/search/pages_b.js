@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['statistic',['statistic',['../md_src_statistic_README.html',1,'']]]
+  ['working_20with_20git',['Working with git',['../page_WorkingWithGit.html',1,'']]]
 ];

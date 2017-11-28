@@ -3,6 +3,7 @@ var searchData=
   ['milk_20modules',['milk modules',['../page_milk_Modules.html',1,'']]],
   ['module_2000core',['Module 00CORE',['../page_module_00CORE.html',1,'page_milk_Modules']]],
   ['module_20commandlineinterface',['Module CommandLineInterface',['../page_module_CommandLineInterface.html',1,'page_milk_Modules']]],
+  ['module_20coremod_5farith',['Module COREMOD_arith',['../page_module_COREMOD_arith.html',1,'page_milk_Modules']]],
   ['module_20coremod_5fiofits',['Module COREMOD_iofits',['../page_module_COREMOD_iofits.html',1,'page_milk_Modules']]],
   ['module_20coremod_5fmemory',['Module COREMOD_memory',['../page_module_COREMOD_memory.html',1,'page_milk_Modules']]],
   ['module_20coremod_5ftools',['Module COREMOD_tools',['../page_module_COREMOD_tools.html',1,'page_milk_Modules']]],
