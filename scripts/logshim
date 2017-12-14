@@ -158,7 +158,7 @@ checkFile /tmp/$1.im.shm
 
 # ============================= CHECK IF COMMAND EXISTS ==========================
 
-checkCommand Cfits
+checkCommand milk
 
 
 
@@ -176,7 +176,7 @@ fi
 mkdir -p $3
 
 
-Cfits -n $pname << EOF
+milk -n $pname << EOF
 csetpmove ${CPUset}
 shmimstreamlog $1 $2 "$3"
 exit

@@ -1,4 +1,4 @@
-Cfits << EOF
+milk << EOF
 cr2tofits "$1" "!$2"
 exit
 EOF
