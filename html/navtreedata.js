@@ -11,6 +11,7 @@ var NAVTREE =
     [ "Loading Modules", "page_LoadingModules.html", null ],
     [ "Command Line Interface", "page_userinput.html", "page_userinput" ],
     [ "Working with git", "page_WorkingWithGit.html", null ],
+    [ "Change Log", "md_src_ImageStreamIO_CHANGELOG.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
@@ -46,7 +47,7 @@ var NAVTREEINDEX =
 "image__basic_8c.html#ab79e66d436d823a0e92ed00f82e36ba7",
 "img__reduce_8c.html#a4a5179709c35c4c2396c40770cef8634",
 "linopt__imtools_8h.html#aeed040346b9c664de625ba1a04fed869",
-"structMODULE.html#a00f49a3577101cbe48b6c964dea35da2"
+"structMODULE.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
