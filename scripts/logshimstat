@@ -19,7 +19,7 @@ fi
 pname="logshimstat-$1"
 echo "$pname"
 
-Cfits -n $pname << EOF
+milk -n $pname << EOF
 shmimslogstat $1
 exit
 EOF

@@ -11,7 +11,7 @@ then
 fi
 
 pname=$0
-Cfits -n $pname << EOF
+milk -n $pname << EOF
 readshmim $1
 savefits $1 "!$2"
 exit

@@ -19,7 +19,7 @@ fi
 pname="$0-$1"
 echo "$pname"
 
-Cfits -n $pname << EOF
+milk -n $pname << EOF
 shmimslogonset $1 1
 exit
 EOF

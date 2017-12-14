@@ -23,7 +23,6 @@ from PIL import Image
 class shm:
     ''' -------------------------------------------------------------
     Shared memory data structure for images and volt maps for SCExAO
-    Definition is available in ~/src/CfitsDev/Cfits/src/Cfits.h
     ------------------------------------------------------------- '''
 
     def __init__(self, fname=None, verbose=True):
