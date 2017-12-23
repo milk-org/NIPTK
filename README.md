@@ -54,7 +54,7 @@ Report bugs and issues on [this page]( https://github.com/milk-org/milk/issues )
 ## Contributing to project
 
 
-See [coding standards]( http://milk-org.github.io/milk/html/page_coding_standards.html ) 
+See [coding standards]( http://milk-org.github.io/milk/page_coding_standards.html ) 
 
 
 
@@ -62,7 +62,7 @@ See [coding standards]( http://milk-org.github.io/milk/html/page_coding_standard
 
 ## Documentation
 
-[Online documentation]( http://milk-org.github.io/milk/html/index.html ) 
+[Online documentation]( http://milk-org.github.io/milk/index.html ) 
 
 
 ## Libraries
