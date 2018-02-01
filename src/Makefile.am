@@ -75,8 +75,9 @@ SUBDIRS += fft
 milk_LDADD += fft/libfft.la
 milk_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 
-
-
+SUBDIRS += kdtree
+milk_LDADD += kdtree/libkdtree.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/kdtree
 
 
 
