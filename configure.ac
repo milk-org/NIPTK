@@ -91,48 +91,6 @@ AC_CHECK_LIB([dl],[main],
 		])
 
 
-case "$host_os" in
-*darwin* | *rhapsody* | *macosx*)
-     AC_DEFINE_UNQUOTED(OSX,1,[This is an OS X system])
-     ;;
-*)
-AC_CHECK_LIB([rt], [clock],
-		[],
-		[ echo "Cannot find required library:rt";
-		  cat doc/configure.howto;
-		  AC_MSG_FAILURE(["FATAL...Cannot find required library:rt"]);
-		  exit 0;
-		])
-;;
-esac
-
-
-AC_CHECK_LIB([pthread], [pthread_create].
-		[],
-		[ echo "Cannot find required library:pthread";
- 		cat doc/configure.howto;
-		  AC_MSG_FAILURE(["FATAL...Cannot find required library:pthread"]);
-		  exit 0;
-		])
-
-AC_CHECK_LIB([gslcblas],[main],
-		[],
-		[ echo "Cannot find required library:gslcblas";
-		  cat doc/configure.howto;
-		  AC_MSG_FAILURE(["FATAL...Cannot find required library:gslcblas"]);
-		  exit 0;
-		])
-
-
-AC_CHECK_LIB([gsl],[main],
-		[],
-		[ echo "Cannot find required library:gsl";
-		  cat doc/configure.howto;
-		  AC_MSG_FAILURE(["FATAL...Cannot find required library:gsl"]);
-		  exit 0;
-		])
-
-
 AC_CHECK_LIB([cfitsio],[main],
 		[],
 		[ echo "Cannot find required static library:fitsio";
@@ -141,8 +99,8 @@ AC_CHECK_LIB([cfitsio],[main],
 		  AC_MSG_FAILURE(["FATAL...Cannot find required library:fitsio"]);
 		  exit 0;
 		])
-		
-		
+
+
 AC_SEARCH_LIBS( [readline], [readline], 
                 [AC_DEFINE([HAVE_READLINE_H], 1, "Define to 1 if you have <readline.h>") ], 
                 [ echo "Cannot find required static library:readline";
@@ -151,7 +109,7 @@ AC_SEARCH_LIBS( [readline], [readline],
                   AC_MSG_FAILURE(["FATAL...Cannot find required library:readlline"]); 
                   exit 0;
                 ])
-
+                
 AC_CHECK_LIB( [ncurses], [initscr], 
 		[],
 		[ echo "Cannot find required library:ncurses";
@@ -346,10 +304,6 @@ if test "$magmaval" == "no"; then
 fi
 
 if test  "$magmaval" = "yes"; then
-## next 3 lines superseded by pkg-config / PKG_CHECK_MODULES
-#	MAGMA_LIBS="-lmagma "
-#	MAGMA_CFLAGS="-DADD_ -I/usr/local/magma/include/"
-#	MAGMA_LDFLAGS="-L/usr/local/magma/lib/"
 	PKG_CHECK_MODULES([MAGMA], [magma])  
 	AC_DEFINE([HAVE_MAGMA],[1],[Defined if MAGMA should be used])
 	eval "ARRAY${N}='-D_MAGMA'"
@@ -357,10 +311,87 @@ if test  "$magmaval" = "yes"; then
     LIBS="$LIBS $MAGMA_LIBS"
     LDFLAGS="$LDFLAGS $MAGMA_LDFLAGS"
     CFLAGS="$CFLAGS $MAGMA_CFLAGS"
-## next line superseded by pkg-config / PKG_CHECK_MODULES
-#    LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L/usr/local/magma/lib/"
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L$MAGMA_INSTALL_PATH/lib"
 fi
+
+
+#=================================================
+# Setup QDWHpartial
+
+# Check: enable QDWHpartial ?
+AC_MSG_CHECKING([whether to use QDWHpartial library])
+AC_ARG_ENABLE(qdwhpartial,
+    [AS_HELP_STRING(--enable-qdwhpartial,enable QDWHpartial support)],
+    qdwhpartialval="yes",
+    qdwhpartialval="no")
+AC_MSG_RESULT([$qdwhpartialval])
+
+
+# check to see if QDWHpartial been selected
+if test "$qdwhpartialval" == "no"; then
+    AC_MSG_WARN([Not using QDWHpartial!])
+fi
+
+if test  "$qdwhpartialval" = "yes"; then
+#	PKG_CHECK_MODULES([QDWHpartial], [qdwhpartial])  
+	AC_DEFINE([HAVE_QDWHpartial],[1],[Defined if QDWHpartial should be used])
+	eval "ARRAY${N}='-D_QDWHpartial'"
+    N=`expr $N + 1`
+    LIBS="-L$QDWHpartial_INSTALL_PATH $QDWHpartial_LIBS $LIBS"
+#    LDFLAGS="$LDFLAGS $QDWHpartial_LDFLAGS"
+#    CFLAGS="$CFLAGS $QDWHpartial_CFLAGS"
+    LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L$QDWHpartial_INSTALL_PATH"
+fi
+
+
+
+
+
+
+
+case "$host_os" in
+*darwin* | *rhapsody* | *macosx*)
+     AC_DEFINE_UNQUOTED(OSX,1,[This is an OS X system])
+     ;;
+*)
+
+AC_CHECK_LIB([rt], [clock],
+		[],
+		[ echo "Cannot find required library:rt";
+		  cat doc/configure.howto;
+		  AC_MSG_FAILURE(["FATAL...Cannot find required library:rt"]);
+		  exit 0;
+		])
+;;
+esac
+
+
+AC_CHECK_LIB([pthread], [pthread_create].
+		[],
+		[ echo "Cannot find required library:pthread";
+ 		cat doc/configure.howto;
+		  AC_MSG_FAILURE(["FATAL...Cannot find required library:pthread"]);
+		  exit 0;
+		])
+
+AC_CHECK_LIB([gslcblas],[main],
+		[],
+		[ echo "Cannot find required library:gslcblas";
+		  cat doc/configure.howto;
+		  AC_MSG_FAILURE(["FATAL...Cannot find required library:gslcblas"]);
+		  exit 0;
+		])
+
+
+AC_CHECK_LIB([gsl],[main],
+		[],
+		[ echo "Cannot find required library:gsl";
+		  cat doc/configure.howto;
+		  AC_MSG_FAILURE(["FATAL...Cannot find required library:gsl"]);
+		  exit 0;
+		])
+
+
 
 
 
