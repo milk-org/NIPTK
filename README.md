@@ -1,7 +1,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/88a7d266c5a04aacbe3d6b99894d1b77)](https://www.codacy.com/app/oguyon/milk?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=milk-org/milk&amp;utm_campaign=Badge_Grade)
-&nbsp;&nbsp;|&nbsp;&nbsp;dev branch: [![Build Status dev](https://travis-ci.org/milk-org/milk.svg?branch=dev)](https://travis-ci.org/milk-org/milk)
-&nbsp;&nbsp;|&nbsp;&nbsp;master branch: [![Build Status](https://travis-ci.org/milk-org/milk.svg?branch=master)](https://travis-ci.org/milk-org/milk)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dev branch: [![Build Status dev](https://travis-ci.org/milk-org/milk.svg?branch=dev)](https://travis-ci.org/milk-org/milk)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;master branch: [![Build Status](https://travis-ci.org/milk-org/milk.svg?branch=master)](https://travis-ci.org/milk-org/milk)
 
 ---
 
