@@ -1,4 +1,17 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/88a7d266c5a04aacbe3d6b99894d1b77)](https://www.codacy.com/app/oguyon/milk?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=milk-org/milk&amp;utm_campaign=Badge_Grade)
+
+dev branch: [![Build Status dev](https://travis-ci.org/milk-org/milk.svg?branch=dev)](https://travis-ci.org/milk-org/milk)
+
+master branch: [![Build Status](https://travis-ci.org/milk-org/milk.svg?branch=master)](https://travis-ci.org/milk-org/milk)
+
+---
+
+IMPORTANT NOTE: milk uses git submodules. Use `git clone --recursive` (see Downloading and Installing section)
+
+---
+
+
 
 # Multi-purpose Imaging Libraries toolKit (milk)
 
