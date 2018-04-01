@@ -18,6 +18,10 @@ AC_CONFIG_MACRO_DIR([m4])
 # find the c-complier
 AC_PROG_CC([gcc cc pgcc])
 
+#AC_PROG_CC_C99
+CFLAGS+=" -std=c11"
+
+
 # Init Automake
 AM_INIT_AUTOMAKE([subdir-objects foreign -Wall])
 m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
