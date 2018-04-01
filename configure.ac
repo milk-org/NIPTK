@@ -15,8 +15,8 @@ AC_CONFIG_SRCDIR([src/CLImain.c])
 
 AC_CONFIG_MACRO_DIR([m4])
 
-
-
+# find the c-complier
+AC_PROG_CC([gcc cc pgcc])
 
 # Init Automake
 AM_INIT_AUTOMAKE([subdir-objects foreign -Wall])
@@ -24,12 +24,11 @@ m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 # Init Libtool
 LT_INIT
 
-# find the c-complier
-#AC_PROG_CC
-AM_PROG_CC_C_O
-
 # check for openMP
 AC_OPENMP
+CFLAGS="$CFLAGS $OPENMP_CFLAGS"
+
+
 
 # Support for Bison and Flex
 AC_PROG_YACC

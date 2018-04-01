@@ -3,7 +3,6 @@
 #include <CommandLineInterface/CLIcore.h>
 
 
-
 #include <image_basic/image_basic.h>
 #include <image_format/image_format.h>
 #include <img_reduce/img_reduce.h>
@@ -16,6 +15,9 @@
 #define STYLE_NO_BOLD "\033[22m"
 
 
+struct DATA data;
+
+
 int main(int argc, char *argv[])
 {
 	char *AppName = "milk";
@@ -25,7 +27,6 @@ int main(int argc, char *argv[])
 	printf(STYLE_NO_BOLD);
 	
 	
-	
 	// initialize milk modules for which no function calls is included by default
 	libinit_image_basic();
 	libinit_image_format();
@@ -33,7 +34,7 @@ int main(int argc, char *argv[])
 	libinit_img_reduce();
 	libinit_ZernikePolyn();
 
-	runCLI(argc, argv, AppName);
+	runCLI(argc, argv, AppName); // in CLIcore.c, module CommandLineInterface
 
 	return 0;
 }
