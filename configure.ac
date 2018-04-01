@@ -19,7 +19,7 @@ AC_CONFIG_MACRO_DIR([m4])
 AC_PROG_CC([gcc cc pgcc])
 
 #AC_PROG_CC_C99
-CFLAGS+=" -std=c11"
+CFLAGS+=" -std=gnu11"
 
 
 # Init Automake
