@@ -16,9 +16,7 @@ AC_CONFIG_SRCDIR([src/CLImain.c])
 AC_CONFIG_MACRO_DIR([m4])
 
 # find the c-complier
-AC_PROG_CC([gcc cc pgcc])
-
-#AC_PROG_CC_C99
+AC_PROG_CC([gcc pgcc])
 CFLAGS+=" -std=gnu11"
 
 
@@ -173,24 +171,7 @@ if   test "x$fftwmt" = "xyes" ; then
 fi
 
 
-#AC_CHECK_LIB([usb], [usb_close], ,[AC_MSG_ERROR(
-# [libusb library not found.  Check with vendor or see http://libusb.sourceforge.net])],
-# [$USBLDFLAGS])
 
-
-#AC_SEARCH_LIBS( [bob],      
-#                [tom], 
-#                [AC_DEFINE([HAVE_BOB_H], 1,
-#                           "Define to 1 if you have <readline.h>")] , 
-#                [AC_MSG_ERROR([$str]); exit 0] )
-
-#AC_CHECK_HEADERS( [bob.h], 
-#                  [], 
-#                  [ echo "Cannot find required header:bob.h";
-#                    cat doc/configure.howto;
-#                    AC_MSG_FAILURE(["Cannot find required header:bob.h"]);
-#                  ]
-#)  
 
 AC_CHECK_HEADERS( [fftw3.h], 
                   [], 
