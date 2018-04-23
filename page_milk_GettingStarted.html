@@ -119,17 +119,54 @@ milk &gt; help
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#!/bin/bash</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;# Enter milk</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# Executable name may vary</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;milk &lt;&lt; EOF</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;# enter milk instructions here</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;creaim im1 512 512</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;listim</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;savefits im1 &quot;!im1.fits&quot;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;# exit command line interface</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;exitCLI</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;# end of script</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;EOF</div></div><!-- fragment --><p>The examples below contain the CLI commands, which can be entered interactively, or included in a script </p><hr/>
 <h2>Example 1: Creating images</h2>
 <pre class="fragment"># create 2D image, 512 x 512 pixels
+# image will be initialized to zero
 creaim im1 512 512
 
 # not sure what creaim command does ? check it
 cmd? creaim
+
+# create a 3D image
+creaim im2 100 100 50
+
+# create a 2D image that is a disk
+# for details, type cmd? mkdisk
+mkdisk imdisk 512 512 256.0 256.0 100.0
+
+# check what images are in local memory
+listim
+
+# save image as FITS file
+savefits im1 "im1.fits"
+
+# save disk image to same file name
+# need to append "!" to overwrite existing file
+savefits imdisk "!im1.fits"
+
+# save compressed image
+savefits imdisk "im1.fits.gz"
+
+# check what has been saved (send command to shell)
+!ls im1*
+</pre><hr/>
+<h2>Example 2: Loading image, some basic arithmetic</h2>
+<p>This example assumes example 1 has create the disk image im1.fits </p><pre class="fragment"># load image as imdisk0
+loadfits im1.fits imdisk0
+
+# create another disk image, larger diameter
+mkdisk imdisk1 512 512 256 256 150
+
+# subtract imdisk0 to imdisk1
+imring=imdisk1-imdisk0
+
+# save to disk as imring.fits (default name)
+savefits imring
 </pre><hr/>
  </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 23 2018 23:52:22 for milk by
+    <li class="footer">Generated on Tue Apr 24 2018 00:00:33 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
