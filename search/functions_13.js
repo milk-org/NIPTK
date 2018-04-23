@@ -1,7 +1,7 @@
 var searchData=
 [
   ['templatemodule_5fexamplefunc00',['templatemodule_examplefunc00',['../templatemodule_8c.html#a58353a0b77b775a8039c0f1cf28e75e3',1,'templatemodule_examplefunc00(int mode):&#160;templatemodule.c'],['../templatemodule_8h.html#a58353a0b77b775a8039c0f1cf28e75e3',1,'templatemodule_examplefunc00(int mode):&#160;templatemodule.c']]],
-  ['templatemodule_5fexamplefunc01',['templatemodule_examplefunc01',['../group__RTfunctions.html#gadbb83d9dc9bee6ebf4d096d2a6f92987',1,'templatemodule_examplefunc01(float val1, int n1, float *farray):&#160;templatemodule.c'],['../group__RTfunctions.html#gadbb83d9dc9bee6ebf4d096d2a6f92987',1,'templatemodule_examplefunc01(float val1, int n1, float *farray):&#160;templatemodule.c']]],
+  ['templatemodule_5fexamplefunc01',['templatemodule_examplefunc01',['../group__RTfunctions.html#ga4582acdd4a93dfaeb591c0c5f68ecb91',1,'templatemodule_examplefunc01(const char *namein, float val1, int n1, float *restrict farray):&#160;templatemodule.c'],['../templatemodule_8h.html#adbb83d9dc9bee6ebf4d096d2a6f92987',1,'templatemodule_examplefunc01(float val1, int n1, float *farray):&#160;templatemodule.h']]],
   ['templatemodule_5fexamplefunction00_5fcli',['templatemodule_examplefunction00_cli',['../templatemodule_8c.html#a32145760e0694646233cb96718004c62',1,'templatemodule.c']]],
   ['templatemodule_5fexamplefunction01_5fcli',['templatemodule_examplefunction01_cli',['../templatemodule_8c.html#a065191bd59b2c989ac3b80f8adcdb59e',1,'templatemodule.c']]],
   ['test_5ffftspeed',['test_fftspeed',['../fft_8c.html#ab3fe145c0484fc3b208e8959ac572e40',1,'test_fftspeed(int nmax):&#160;fft.c'],['../fft_8h.html#ab3fe145c0484fc3b208e8959ac572e40',1,'test_fftspeed(int nmax):&#160;fft.c']]],

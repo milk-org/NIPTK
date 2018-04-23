@@ -7,7 +7,7 @@ var searchData=
   ['valstr',['valstr',['../struct____attribute____.html#a1aabca3f48169935bbbd61596a255cfe',1,'__attribute__']]],
   ['value',['value',['../structsymrec.html#aabe0b508928c6472fcbdf5071c33b61a',1,'symrec::value()'],['../structVARIABLE.html#ad7e8abd9c114ebdee993748b595c1142',1,'VARIABLE::value()'],['../struct____attribute____.html#acd2442d5a343ff65e0988a36c309b2a3',1,'__attribute__::value()']]],
   ['var',['var',['../structsymrec.html#af3db0c7e569f93a9d7385d5b170578f8',1,'symrec']]],
-  ['variable',['VARIABLE',['../structVARIABLE.html',1,'VARIABLE'],['../structDATA.html#a38336f0ef793c2aef2a6f3a20e3e361b',1,'DATA::variable()']]],
+  ['variable',['VARIABLE',['../structVARIABLE.html',1,'VARIABLE'],['../structDATA.html#acec2a3c2ba988920dce97aecab5aedb0',1,'DATA::variable()'],['../structDATA.html#a38336f0ef793c2aef2a6f3a20e3e361b',1,'DATA::variable()']]],
   ['variable_5fid',['variable_ID',['../COREMOD__memory_8c.html#a6c8a58000943870cafcc9e4c9665bab5',1,'variable_ID(const char *name):&#160;COREMOD_memory.c'],['../COREMOD__memory_8h.html#a6c8a58000943870cafcc9e4c9665bab5',1,'variable_ID(const char *name):&#160;COREMOD_memory.c']]],
   ['verbose',['Verbose',['../CLIcore_8c.html#a95f627d7054b1abbffa2c6ea19bf05db',1,'CLIcore.c']]]
 ];

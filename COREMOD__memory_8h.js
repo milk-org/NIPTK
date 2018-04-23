@@ -2,6 +2,7 @@ var COREMOD__memory_8h =
 [
     [ "LOGSHIM_CONF", "structLOGSHIM__CONF.html", "structLOGSHIM__CONF" ],
     [ "TCP_BUFFER_METADATA", "structTCP__BUFFER__METADATA.html", "structTCP__BUFFER__METADATA" ],
+    [ "__attribute__", "COREMOD__memory_8h.html#a4c35a841e2abdfab15a92d67411f4adf", null ],
     [ "check_2Dsize", "COREMOD__memory_8h.html#ae33095c38f0d8d55e3e98fc846f8d3c4", null ],
     [ "check_3Dsize", "COREMOD__memory_8h.html#a640a8dc956e10229ebbdbc6168bb95c8", null ],
     [ "chname_image_ID", "COREMOD__memory_8h.html#a3101e27f0b2d7a3a38619969e00d7981", null ],
@@ -42,6 +43,7 @@ var COREMOD__memory_8h =
     [ "COREMOD_MEMORY_streamAve", "COREMOD__memory_8h.html#ad596a5fc09c31473e9e94a3fa821bc3a", null ],
     [ "COREMOD_MEMORY_streamDelay", "COREMOD__memory_8h.html#a08bd70b13c19050ff683af640e72ffd3", null ],
     [ "COREMOD_MEMORY_streamDiff", "COREMOD__memory_8h.html#ae11d3a0de47d45a60107c9e360eed117", null ],
+    [ "COREMOD_MEMORY_testfunc", "COREMOD__memory_8h.html#aa97c480e1d2fa341c233d5059e0b5f79", null ],
     [ "create_1DCimage_ID", "COREMOD__memory_8h.html#a31e167d2d2fe4dea5c77e0ee3cd20d2b", null ],
     [ "create_1Dimage_ID", "COREMOD__memory_8h.html#af4310a93970c5e6f9ef77a4585b5cc25", null ],
     [ "create_2DCimage_ID", "COREMOD__memory_8h.html#adf21e8412f5edde73fe16cf8ebf30a9d", null ],

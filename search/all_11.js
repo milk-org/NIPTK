@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['qdwhpartial',['QDWHpartial',['../cudacomp_8c.html#acea839c882cdfdb6e256198f0e63ba88',1,'cudacomp.c']]],
   ['qs2l',['qs2l',['../COREMOD__tools_8c.html#a0aae1e0666127ce8fdce05ccdde714cb',1,'qs2l(double *array, long *array1, long left, long right):&#160;COREMOD_tools.c'],['../COREMOD__tools_8h.html#a0aae1e0666127ce8fdce05ccdde714cb',1,'qs2l(double *array, long *array1, long left, long right):&#160;COREMOD_tools.c']]],
   ['qs2l_5fdouble',['qs2l_double',['../COREMOD__tools_8c.html#a4dbe1b91d64a54a8b292bd66c5971b5c',1,'COREMOD_tools.c']]],
   ['qs3',['qs3',['../COREMOD__tools_8c.html#adcc132f855ef70380890363c5b0fa8fc',1,'qs3(double *array, double *array1, double *array2, long left, long right):&#160;COREMOD_tools.c'],['../COREMOD__tools_8h.html#adcc132f855ef70380890363c5b0fa8fc',1,'qs3(double *array, double *array1, double *array2, long left, long right):&#160;COREMOD_tools.c']]],

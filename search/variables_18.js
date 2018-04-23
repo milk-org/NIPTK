@@ -18,7 +18,7 @@ var searchData=
   ['yy_5fch_5fbuf',['yy_ch_buf',['../structyy__buffer__state.html#ad7b8df8d8a4688e57b0b8d3ca75adc85',1,'yy_buffer_state']]],
   ['yy_5fchk',['yy_chk',['../calc__flex_8c.html#a9b59e5f42a4a33da4e7c4bcd531b3017',1,'calc_flex.c']]],
   ['yy_5fcp',['yy_cp',['../calc__flex_8c.html#ab98daea4ec951dfa966b5ca0f8133d38',1,'calc_flex.c']]],
-  ['yy_5fcurrent_5fstate',['yy_current_state',['../calc__flex_8c.html#a86a21c2101611f87781b40b111e65aac',1,'calc_flex.c']]],
+  ['yy_5fdecl',['YY_DECL',['../calc__flex_8c.html#abcefb20c54ce0f92452cfbb9cf657670',1,'calc_flex.c']]],
   ['yy_5fdef',['yy_def',['../calc__flex_8c.html#a8a0ee5fc149e82297fac0cf6ed85ed3f',1,'calc_flex.c']]],
   ['yy_5fdid_5fbuffer_5fswitch_5fon_5feof',['yy_did_buffer_switch_on_eof',['../calc__flex_8c.html#a57edb4569f96dcfce9deaff0eb6a6412',1,'calc_flex.c']]],
   ['yy_5fec',['yy_ec',['../calc__flex_8c.html#ac6dfb8e0e130a1bb6e9cdd547a1f4344',1,'calc_flex.c']]],

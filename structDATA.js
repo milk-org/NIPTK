@@ -14,6 +14,7 @@ var structDATA =
     [ "fifoname", "structDATA.html#ac3b98b39c316089481ab31820a1f4b21", null ],
     [ "fifoON", "structDATA.html#a37b44a7ef0d3d29f33bf3700ec28665e", null ],
     [ "FLOATARRAY", "structDATA.html#a58210ca81311d78d220027755351f8b8", null ],
+    [ "image", "structDATA.html#a73d833fc01b56c3cbd6b591f95c7b2ae", null ],
     [ "image", "structDATA.html#aafd2755d1c0845d9f671d42c916469ed", null ],
     [ "INVRANDMAX", "structDATA.html#aa17d253cb7412ac4cbc8f034dfe78308", null ],
     [ "module", "structDATA.html#a71ad1e5186aeda06d9b36c97f94db401", null ],
@@ -28,6 +29,7 @@ var structDATA =
     [ "parseerror", "structDATA.html#a04c14ba8ea1844e3f68888dca0fe3519", null ],
     [ "precision", "structDATA.html#a7b6fce0fc9e6046ffa57b30b8bcd0d1f", null ],
     [ "processname", "structDATA.html#a58978653cfb98eaf9b9007cb992cc0e4", null ],
+    [ "progStatus", "structDATA.html#a15b9710b13cfe89af37f42194bc1ba5d", null ],
     [ "quiet", "structDATA.html#a3f7eda27560572dd2510250a1935deb5", null ],
     [ "rndgen", "structDATA.html#a819c0e911d771dbb7da0dbf26e993fc2", null ],
     [ "ruid", "structDATA.html#a58536c786a36c70932f12e4663a2194d", null ],
@@ -46,5 +48,6 @@ var structDATA =
     [ "status0", "structDATA.html#a14eafa363f5cd5dd7ff9ca0744029565", null ],
     [ "status1", "structDATA.html#acc1a46fa384934e24a89660d8d0c9f7a", null ],
     [ "suid", "structDATA.html#a1d927d661e39cd581d8ecf8665206388", null ],
+    [ "variable", "structDATA.html#acec2a3c2ba988920dce97aecab5aedb0", null ],
     [ "variable", "structDATA.html#a38336f0ef793c2aef2a6f3a20e3e361b", null ]
 ];

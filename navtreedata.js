@@ -14,8 +14,8 @@ var NAVTREE =
     [ "Change Log", "md_src_ImageStreamIO_CHANGELOG.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Data Structures", null, [
-      [ "Data Structures", "annotated.html", "annotated" ],
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
@@ -39,15 +39,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "00CORE_8c.html",
-"COREMOD__arith_8c.html#ab06e43c24510a4f23abd771634adcc1c",
-"COREMOD__arith_8h.html#afba241e53c997b952b8f25eca8c32650",
-"COREMOD__memory_8h.html#a9c4f1c42015da7cecf5a45be0c1eec87",
-"calc__bison_8c.html#a6d39cfd55875de3316f76edb1891c999",
-"dir_b07b29f2a0f54c902d2948f61c128711.html",
-"image__basic_8c.html#aa86ff9597b0bdcfe1d9efce10218a340",
-"img__reduce_8c.html#a09119447635dca00a8e363699be085a6",
-"linopt__imtools_8h.html#ab54ce92e786d475dae79a07cda07a905",
-"structLOGSHIM__CONF.html#ade9849e9a2d4a6973b891d0ba46724ed"
+"COREMOD__arith_8c.html#aa58291e2f379e6aaa1e1ac6a78c45c6f",
+"COREMOD__arith_8h.html#af552062fe88fed40500fd2fe1a0c8538",
+"COREMOD__memory_8h.html#a8a2b303e2c257033ceb37cae570f3d0b",
+"calc__bison_8c.html#a15c9f7bd2f0e9686df5d9df4f3314aa9ada400b26a63d80646288849886f63a4e",
+"cudacomp_8h.html#a5db894f96230f0ab904cf66eb847a40b",
+"image__basic_8c.html#a5e752be3a9de1140805fb33f86d97cf9",
+"image__gen_8h.html#a2dd0cffd354941445da465418ec86c0c",
+"linopt__imtools_8c.html#a58880d72f814fc608aa5c35c91c8a5d1",
+"structDATA.html#af462cdcbd42307c3dacf0891ba4dd8ca"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
