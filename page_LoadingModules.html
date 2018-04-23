@@ -106,12 +106,13 @@ $(document).ready(function(){initNavTree('page_LoadingModules.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Users can create additional modules, and bu following a few milk-specific conventions, link their functions to the milk CLI. Additional modules can be added to the existing build process (see "Compiling and linking modules with Autotools") or compiled separately and then loaded at runtime (see "Linking at runtime").</p>
-<p>The second option is more flexible, and allows user to choose compiliation options, and when/if to load the module. It will however require to pay attention to dependencies. </p><hr/>
+<p>The second option is more flexible, and allows user to choose compiliation options, and when/if to load the module. It will however require to pay attention to dependencies.</p>
+<hr/>
 <h2>Compiling and linking modules with Autotools</h2>
 <p>Source code is organized in modules. Modules are compiled and linked using the libtool / autotools process, as shared libtool convenience libraries.</p>
 <p>See : <a href="https://www.gnu.org/software/automake/manual/html_node/Libtool-Convenience-Libraries.html">https://www.gnu.org/software/automake/manual/html_node/Libtool-Convenience-Libraries.html</a></p>
 <p>The list of modules currently appears in multiple files associated with the build process. The build process uses autotools, which has the advantage of supporting many platforms.</p>
-<p>Users adding modules are required to add the modules to 3 files, as described in sections 1.1, 1.2, and 1.3.</p>
+<p>Users adding modules are required to add the modules to 3 files, as described below.</p>
 <h3>Adding modules to <code>configure.ac</code></h3>
 <p>Modules are listed in file <code>&lt;srcdir&gt;/configure.ac</code> under the "AC_CONFIG_FILES"</p>
 <p>see: <a href="https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.69/html_node/Configuration-Files.html">https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.69/html_node/Configuration-Files.html</a></p>
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('page_LoadingModules.html','');});
 <hr/>
 <h2>Linking at runtime with dlopen()</h2>
 <h3>Loading modules into milk</h3>
-<p>Alternatively, users may create their own libraries and link them at runtime using the <code>soload</code> or function of the command line interface. At any time, a module can be loaded from the CLI using: </p><pre class="fragment">&gt; soload &lt;mymodulename.so&gt;
+<p>Alternatively, users may create their own libraries and link them at runtime using the <code>soload</code> or function of the command line interface. At any time, a module can be loaded from the CLI using: </p><pre class="fragment">milk &gt; soload &lt;mymodulename.so&gt;
 </pre><p>See: <a href="http://www.linux-mag.com/id/1028/">http://www.linux-mag.com/id/1028/</a> for instructions to create shared libraries that can be loaded as modules.</p>
 <p>The library should include a function <code>initlib_&lt;modulename&gt;</code> to be executed when the module is loaded. This function should register functions to the command line interface, as done for all other modules that are part of the distribution.</p>
 <h3>Example code</h3>
@@ -136,12 +137,12 @@ gcc -c -fPIC compute_pi.c -Ofast
 gcc -shared -I.. -fPIC exampleModule.o compute_pi.o -o libexamplemodule.so -lc
 </pre><p>To load the new modules automatically on milk startup, create a sym link in the milk's lib directory: </p><pre class="fragment">cd ~/src/milk/lib
 ln -s ../src/exampleModule/libexamplemodule.so libexamplemodule.so
-</pre><p>Alternatively, you can load it from the CLI at anytime: </p><pre class="fragment">milk&gt; soload "&lt;pathtomilk&gt;/src/exampleModule/libexamplemodule.so"</pre> </div></div><!-- contents -->
+</pre><p>Alternatively, you can load it from the CLI at anytime: </p><pre class="fragment">milk &gt; soload "&lt;pathtomilk&gt;/src/exampleModule/libexamplemodule.so"</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 23 2018 23:36:01 for milk by
+    <li class="footer">Generated on Mon Apr 23 2018 23:52:22 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

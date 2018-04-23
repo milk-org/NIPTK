@@ -105,14 +105,31 @@ $(document).ready(function(){initNavTree('page_milk_GettingStarted.html','');});
 <div class="title">Getting Started </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>milk help is accessible from the command line interface (CLI). Type </p><pre class="fragment">$ milk
+<div class="textblock"><hr/>
+<h2>Basics</h2>
+<h3>Command line interface (CLI)</h3>
+<p>milk help is accessible from the command line interface (CLI). Type </p><pre class="fragment">$ milk
 milk &gt; help
-</pre><p>To exit the CLI, type </p><pre class="fragment">milk &gt; exitCLI</pre> </div></div><!-- contents -->
+</pre><p>milk's help should get you started.</p>
+<p>To exit the CLI, type </p><pre class="fragment">milk &gt; exitCLI
+</pre><p>Examples below show how to use the milk command line interface (CLI) to perform simple operations.</p>
+<h3>Writing scripts</h3>
+<p>You can write scripts to enter milk, execute milk commands from the CLI and exit. Note that milk follows the standard bash comment syntax starting.</p>
+<p>Example script file</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#!/bin/bash</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;# Enter milk</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# Executable name may vary</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;milk &lt;&lt; EOF</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;# enter milk instructions here</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;creaim im1 512 512</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;listim</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;savefits im1 &quot;!im1.fits&quot;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;# exit command line interface</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;exitCLI</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;# end of script</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;EOF</div></div><!-- fragment --><p>The examples below contain the CLI commands, which can be entered interactively, or included in a script </p><hr/>
+<h2>Example 1: Creating images</h2>
+<pre class="fragment"># create 2D image, 512 x 512 pixels
+creaim im1 512 512
+
+# not sure what creaim command does ? check it
+cmd? creaim
+</pre><hr/>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 23 2018 23:36:01 for milk by
+    <li class="footer">Generated on Mon Apr 23 2018 23:52:22 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
