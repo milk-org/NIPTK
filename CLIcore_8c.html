@@ -156,6 +156,8 @@ Functions</h2></td></tr>
 <tr class="separator:ace4bc9dcd102b590befe02a89a457d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d539b7a8f1960528a16a4a7516ba77"><td class="memItemLeft" align="right" valign="top">static int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#ad8d539b7a8f1960528a16a4a7516ba77">list_commands_module</a> (char *modulename)</td></tr>
 <tr class="separator:ad8d539b7a8f1960528a16a4a7516ba77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b587d06f26c34767590932c10590ad"><td class="memItemLeft" align="right" valign="top">static int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a64b587d06f26c34767590932c10590ad">load_sharedobj</a> (char *libname)</td></tr>
+<tr class="separator:a64b587d06f26c34767590932c10590ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c8a7e8a97dd4c563dd351bc26595736"><td class="memItemLeft" align="right" valign="top">static int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a4c8a7e8a97dd4c563dd351bc26595736">load_module_shared</a> (char *modulename)</td></tr>
 <tr class="separator:a4c8a7e8a97dd4c563dd351bc26595736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e385e515c1eccb1f0c0b0835876a853"><td class="memItemLeft" align="right" valign="top">static int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a7e385e515c1eccb1f0c0b0835876a853">load_module_shared_ALL</a> ()</td></tr>
@@ -175,6 +177,8 @@ Functions</h2></td></tr>
 <tr class="separator:a32841e2d4954c9c57c464b81d0a4eb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acda89d7a39d7806e055c55f650e4467c"><td class="memItemLeft" align="right" valign="top">static int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#acda89d7a39d7806e055c55f650e4467c">help_module</a> ()</td></tr>
 <tr class="separator:acda89d7a39d7806e055c55f650e4467c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2370fc764d9d0e188519587f7839d13"><td class="memItemLeft" align="right" valign="top">static int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#ad2370fc764d9d0e188519587f7839d13">load_so</a> ()</td></tr>
+<tr class="separator:ad2370fc764d9d0e188519587f7839d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a710e913e9ff2588e0df7d6800700f472"><td class="memItemLeft" align="right" valign="top">static int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a710e913e9ff2588e0df7d6800700f472">load_module</a> ()</td></tr>
 <tr class="separator:a710e913e9ff2588e0df7d6800700f472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58f813ca559ecbde1ad32275d32b9f6c"><td class="memItemLeft" align="right" valign="top">int_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIcore_8c.html#a58f813ca559ecbde1ad32275d32b9f6c">set_default_precision_single</a> ()</td></tr>
@@ -797,6 +801,53 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a64b587d06f26c34767590932c10590ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int_fast8_t load_sharedobj </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>libname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2370fc764d9d0e188519587f7839d13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int_fast8_t load_so </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5394e0be8c8a46c283f5b905ce8f676c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1355,7 +1406,7 @@ parsing done with bison and flex </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_100645d6fa43bdf6aa49bbcbad19d7c2.html">CommandLineInterface</a></li><li class="navelem"><a class="el" href="CLIcore_8c.html">CLIcore.c</a></li>
-    <li class="footer">Generated on Mon Apr 23 2018 12:06:04 for milk by
+    <li class="footer">Generated on Mon Apr 23 2018 23:36:01 for milk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

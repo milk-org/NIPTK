@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fft_2ec',['fft.c',['../fft_8c.html',1,'']]],
-  ['fft_2eh',['fft.h',['../fft_8h.html',1,'']]]
+  ['examplemodule_2ec',['exampleModule.c',['../exampleModule_8c.html',1,'']]],
+  ['examplemodule_2eh',['exampleModule.h',['../exampleModule_8h.html',1,'']]]
 ];

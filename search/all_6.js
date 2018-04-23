@@ -12,6 +12,8 @@ var searchData=
   ['event1121',['event1121',['../struct____attribute____.html#a44703c065b0eeeb5cec0435d0e020d05',1,'__attribute__']]],
   ['event_5fui8_5fui8_5fui16_5fui8',['EVENT_UI8_UI8_UI16_UI8',['../ImageStruct_8h.html#ad3bd41dace53a6604afd86d3fae841cb',1,'ImageStruct.h']]],
   ['example',['example',['../structCMD.html#ace2e43b45ffe9d3be7e053c864b2807e',1,'CMD']]],
+  ['examplemodule_2ec',['exampleModule.c',['../exampleModule_8c.html',1,'']]],
+  ['examplemodule_2eh',['exampleModule.h',['../exampleModule_8h.html',1,'']]],
   ['execute_5farith',['execute_arith',['../COREMOD__arith_8c.html#adc4dd5cfb118d97eaf42407c619a43ab',1,'execute_arith(const char *cmd1):&#160;COREMOD_arith.c'],['../COREMOD__arith_8h.html#ad10d44778ba05ef35222a1ea928eb27f',1,'execute_arith(const char *cmd):&#160;COREMOD_arith.c']]],
   ['exitcli',['exitCLI',['../CLIcore_8c.html#a59af8cdd8ef607fb9221fb3a6a3185bb',1,'CLIcore.c']]],
   ['export_5fwisdom',['export_wisdom',['../fft_8c.html#a05727be9438b2cfc5933ff196988f3d2',1,'export_wisdom():&#160;fft.c'],['../fft_8h.html#a05727be9438b2cfc5933ff196988f3d2',1,'export_wisdom():&#160;fft.c']]],

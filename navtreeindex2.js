@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"COREMOD__arith_8h.html#af4281c99ded0344d0c92c93e94deb630":[14,0,0,2,1,0],
+"COREMOD__arith_8h.html#af448fbbf3a4c409b5907ba0d9b4e0a4e":[14,0,0,2,1,2],
 "COREMOD__arith_8h.html#af552062fe88fed40500fd2fe1a0c8538":[14,0,0,2,1,94],
 "COREMOD__arith_8h.html#af6427f827bed4e0526cf80a1e1f54956":[14,0,0,2,1,167],
 "COREMOD__arith_8h.html#af766f8ba549fec0d6e261cdc099146ee":[14,0,0,2,1,125],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "COREMOD__memory_8h.html#a6eeb0be5c86ce07cf87ea6b86624d106":[14,0,0,4,1,76],
 "COREMOD__memory_8h.html#a6fdbf9d15c38ab7e17cba7491027299e":[14,0,0,4,1,22],
 "COREMOD__memory_8h.html#a768294515f9e6eb06e441cc52a076619":[14,0,0,4,1,38],
-"COREMOD__memory_8h.html#a77d968806ac968187091bd49cd6e7d7d":[14,0,0,4,1,80],
-"COREMOD__memory_8h.html#a7e0251e7339cbc50b6ed995e8609081c":[14,0,0,4,1,86],
-"COREMOD__memory_8h.html#a84739b6ed4d35037d1d0809467d60960":[14,0,0,4,1,72]
+"COREMOD__memory_8h.html#a77d968806ac968187091bd49cd6e7d7d":[14,0,0,4,1,80]
 };

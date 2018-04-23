@@ -12,6 +12,7 @@ var searchData=
   ['climain_2ec',['CLImain.c',['../CLImain_8c.html',1,'']]],
   ['coding_5fstandards_2emd',['coding_standards.md',['../coding__standards_8md.html',1,'']]],
   ['compilation_2emd',['Compilation.md',['../Compilation_8md.html',1,'']]],
+  ['compute_5fpi_2ec',['compute_pi.c',['../compute__pi_8c.html',1,'']]],
   ['coremod_5farith_2ec',['COREMOD_arith.c',['../COREMOD__arith_8c.html',1,'']]],
   ['coremod_5farith_2eh',['COREMOD_arith.h',['../COREMOD__arith_8h.html',1,'']]],
   ['coremod_5fiofits_2ec',['COREMOD_iofits.c',['../COREMOD__iofits_8c.html',1,'']]],

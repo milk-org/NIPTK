@@ -22,6 +22,8 @@ var CLIcore_8c =
     [ "load_module", "CLIcore_8c.html#a710e913e9ff2588e0df7d6800700f472", null ],
     [ "load_module_shared", "CLIcore_8c.html#a4c8a7e8a97dd4c563dd351bc26595736", null ],
     [ "load_module_shared_ALL", "CLIcore_8c.html#a7e385e515c1eccb1f0c0b0835876a853", null ],
+    [ "load_sharedobj", "CLIcore_8c.html#a64b587d06f26c34767590932c10590ad", null ],
+    [ "load_so", "CLIcore_8c.html#ad2370fc764d9d0e188519587f7839d13", null ],
     [ "main_free", "CLIcore_8c.html#a5394e0be8c8a46c283f5b905ce8f676c", null ],
     [ "main_init", "CLIcore_8c.html#a0b8da71bf10f209b0dfa41f04551c4fc", null ],
     [ "memory_re_alloc", "CLIcore_8c.html#a4c72da473d70f5a18e3a1ba80560dd04", null ],

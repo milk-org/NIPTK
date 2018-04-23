@@ -80,11 +80,13 @@ var searchData=
   ['load_5fmodule',['load_module',['../CLIcore_8c.html#a710e913e9ff2588e0df7d6800700f472',1,'CLIcore.c']]],
   ['load_5fmodule_5fshared',['load_module_shared',['../CLIcore_8c.html#a4c8a7e8a97dd4c563dd351bc26595736',1,'CLIcore.c']]],
   ['load_5fmodule_5fshared_5fall',['load_module_shared_ALL',['../CLIcore_8c.html#a7e385e515c1eccb1f0c0b0835876a853',1,'CLIcore.c']]],
+  ['load_5fsharedobj',['load_sharedobj',['../CLIcore_8c.html#a64b587d06f26c34767590932c10590ad',1,'CLIcore.c']]],
+  ['load_5fso',['load_so',['../CLIcore_8c.html#ad2370fc764d9d0e188519587f7839d13',1,'CLIcore.c']]],
   ['loadcr2',['loadCR2',['../image__format_8c.html#a29059dc94920dab00c7573a350d2619a',1,'image_format.c']]],
   ['loadcr2tofitsrgb',['loadCR2toFITSRGB',['../image__format_8c.html#a9b5c7ac4dc385d859b0da3097575ee59',1,'loadCR2toFITSRGB(const char *fnameCR2, const char *fnameFITSr, const char *fnameFITSg, const char *fnameFITSb):&#160;image_format.c'],['../image__format_8h.html#a9b5c7ac4dc385d859b0da3097575ee59',1,'loadCR2toFITSRGB(const char *fnameCR2, const char *fnameFITSr, const char *fnameFITSg, const char *fnameFITSb):&#160;image_format.c']]],
   ['loadingmodules_2emd',['LoadingModules.md',['../LoadingModules_8md.html',1,'']]],
   ['logexit',['logexit',['../structLOGSHIM__CONF.html#ade9849e9a2d4a6973b891d0ba46724ed',1,'LOGSHIM_CONF']]],
   ['logflag',['logflag',['../struct____attribute____.html#a87a10805a2d65383afc146946909170d',1,'__attribute__']]],
   ['logshim_5fconf',['LOGSHIM_CONF',['../structLOGSHIM__CONF.html',1,'']]],
-  ['loading_20modules',['Loading Modules',['../page_LoadingModules.html',1,'']]]
+  ['loading_20and_20creating_20modules',['Loading and Creating Modules',['../page_LoadingModules.html',1,'']]]
 ];

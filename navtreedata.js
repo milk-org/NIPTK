@@ -8,7 +8,7 @@ var NAVTREE =
     [ "News", "page_news.html", null ],
     [ "Coding Standards", "page_coding_standards.html", "page_coding_standards" ],
     [ "Installation", "page_installation.html", null ],
-    [ "Loading Modules", "page_LoadingModules.html", null ],
+    [ "Loading and Creating Modules", "page_LoadingModules.html", null ],
     [ "Command Line Interface", "page_userinput.html", "page_userinput" ],
     [ "Working with git", "page_WorkingWithGit.html", null ],
     [ "Change Log", "md_src_ImageStreamIO_CHANGELOG.html", null ],
@@ -39,15 +39,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "00CORE_8c.html",
-"COREMOD__arith_8c.html#aa58291e2f379e6aaa1e1ac6a78c45c6f",
-"COREMOD__arith_8h.html#af552062fe88fed40500fd2fe1a0c8538",
-"COREMOD__memory_8h.html#a8a2b303e2c257033ceb37cae570f3d0b",
-"calc__bison_8c.html#a15c9f7bd2f0e9686df5d9df4f3314aa9ada400b26a63d80646288849886f63a4e",
-"cudacomp_8h.html#a5db894f96230f0ab904cf66eb847a40b",
-"image__basic_8c.html#a5e752be3a9de1140805fb33f86d97cf9",
-"image__gen_8h.html#a2dd0cffd354941445da465418ec86c0c",
-"linopt__imtools_8c.html#a58880d72f814fc608aa5c35c91c8a5d1",
-"structDATA.html#af462cdcbd42307c3dacf0891ba4dd8ca"
+"COREMOD__arith_8c.html#aa4f9aab7430cbc4e43dca9fc9642f3f6",
+"COREMOD__arith_8h.html#af4281c99ded0344d0c92c93e94deb630",
+"COREMOD__memory_8h.html#a7e0251e7339cbc50b6ed995e8609081c",
+"calc__bison_8c.html#a15c9f7bd2f0e9686df5d9df4f3314aa9acccbda596e605918cbf39a103082350d",
+"cudacomp_8h.html#a2270415c2fe29a781e411e2047702e65",
+"image__basic_8c.html#a369b2617616d0e846652eb9e0ebf91c8",
+"image__gen_8c.html#aeedc0c290a6dc981e36c231cd1fe1b89",
+"linARfilterPred_8h.html#a757c5f80b839ea32731ba61082ffe185",
+"structDATA.html#a883b88f5c5cca024bfc4240cda302dd7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

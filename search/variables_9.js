@@ -18,6 +18,7 @@ var searchData=
   ['initstatus_5fcoremod_5fmemory',['INITSTATUS_COREMOD_memory',['../COREMOD__memory_8c.html#a4ad95509513294e65e1aa0d7d54a8caa',1,'COREMOD_memory.c']]],
   ['initstatus_5fcoremod_5ftools',['INITSTATUS_COREMOD_tools',['../COREMOD__tools_8c.html#a8c42e77b6c85f41a9312af4681eef2c2',1,'COREMOD_tools.c']]],
   ['initstatus_5fcudacomp',['INITSTATUS_cudacomp',['../cudacomp_8c.html#a36b5f6ffcce02da5b71a91d09b1c60ef',1,'cudacomp.c']]],
+  ['initstatus_5fexamplemodule',['INITSTATUS_exampleModule',['../exampleModule_8c.html#afd6a7cad73d792f117d132988f0d96c3',1,'exampleModule.c']]],
   ['initstatus_5ffft',['INITSTATUS_fft',['../fft_8c.html#a608311664cd92f0ad7b151d796be68ff',1,'fft.c']]],
   ['initstatus_5fimage_5fbasic',['INITSTATUS_image_basic',['../image__basic_8c.html#a5417eea66e528f44b6387b63b286f798',1,'image_basic.c']]],
   ['initstatus_5fimage_5ffilter',['INITSTATUS_image_filter',['../image__filter_8c.html#a44be09b45e2848df3a380ec8cc33db35',1,'image_filter.c']]],

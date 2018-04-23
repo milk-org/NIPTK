@@ -67,6 +67,7 @@ var searchData=
   ['fp',['fp',['../structCMD.html#ae8ee9d3a38444931eae3f8988af15acb',1,'CMD']]],
   ['fpgnuplot',['fpgnuplot',['../COREMOD__tools_8c.html#a7a9031c756cc5a1da42cffc862eb783a',1,'COREMOD_tools.c']]],
   ['free',['free',['../calc__bison_8c.html#af07d89f5ceaea0c7c8252cc41fd75f37',1,'calc_bison.c']]],
+  ['free_5fexamplemodule',['free_exampleModule',['../exampleModule_8c.html#af19a32cdf3b2f36220757995fb22e8c6',1,'exampleModule.c']]],
   ['free_5ffft',['free_fft',['../fft_8c.html#a407aad4a96dd2d7810194e30742a64cd',1,'fft.c']]],
   ['free_5fnodes',['free_nodes',['../kdtree_8c.html#a36fcc7a723160bc0d367c6e616940231',1,'kdtree.c']]],
   ['free_5fresnode',['free_resnode',['../kdtree_8c.html#a3a7b7ddb8a0f1a32786207dfb89adb4d',1,'kdtree.c']]],

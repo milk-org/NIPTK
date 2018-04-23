@@ -44,6 +44,7 @@ var searchData=
   ['fit_5fzer',['fit_zer',['../ZernikePolyn_8c.html#a31a371141d2828faf05365e7eaee52a5',1,'fit_zer(const char *ID_name, long maxzer_nb, double radius, double *zvalue, double *residual):&#160;ZernikePolyn.c'],['../ZernikePolyn_8h.html#a31a371141d2828faf05365e7eaee52a5',1,'fit_zer(const char *ID_name, long maxzer_nb, double radius, double *zvalue, double *residual):&#160;ZernikePolyn.c']]],
   ['fnexit1',['fnExit1',['../CLIcore_8c.html#aba10aa7a7ca914de660d5e55c431baee',1,'CLIcore.c']]],
   ['free',['free',['../calc__bison_8c.html#af07d89f5ceaea0c7c8252cc41fd75f37',1,'calc_bison.c']]],
+  ['free_5fexamplemodule',['free_exampleModule',['../exampleModule_8c.html#af19a32cdf3b2f36220757995fb22e8c6',1,'exampleModule.c']]],
   ['free_5ffft',['free_fft',['../fft_8c.html#a407aad4a96dd2d7810194e30742a64cd',1,'fft.c']]],
   ['free_5fresnode',['free_resnode',['../kdtree_8c.html#a3a7b7ddb8a0f1a32786207dfb89adb4d',1,'kdtree.c']]],
   ['full_5fstructure_5ffunction',['full_structure_function',['../info_8c.html#ac02cdc06d81f15987e62b17f1acb31f7',1,'full_structure_function(const char *ID_name, long NBpoints, const char *ID_out):&#160;info.c'],['../info_8h.html#ac02cdc06d81f15987e62b17f1acb31f7',1,'full_structure_function(const char *ID_name, long NBpoints, const char *ID_out):&#160;info.c']]]
