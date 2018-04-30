@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libCOREMOD_memory.so -o libCOREMOD_memory.so CMakeFiles/COREMOD_memory.dir/COREMOD_memory.c.o 

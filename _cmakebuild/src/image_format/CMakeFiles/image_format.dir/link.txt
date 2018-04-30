@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libimage_format.so -o libimage_format.so CMakeFiles/image_format.dir/image_format.c.o 

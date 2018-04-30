@@ -5,6 +5,7 @@
  * Example module
  * Demonstrates custom compilation (separately from main package)
  * Creates shared object that can be loaded using milk's mload command
+ * This example illustrates use of openACC with pgi compiler
  * 
  * @author  O. Guyon
  * @date    2018-04-23
@@ -14,10 +15,19 @@
  * 
  * gcc -c -I.. -fPIC exampleModule.c
  * 
- * CHOOSE ONE:
+ * For non-accelerated code:
  * gcc -c -fPIC compute_pi.c -Ofast
- * pgcc -c -fPIC -fast -acc compute_pi.c -ta=tesla:cc50 -Minfo=all
  * 
+ * Accelerated code:
+ * pgcc -c -fPIC -fast -acc compute_pi.c -ta=tesla:nordc -Minfo=all
+ * 
+ * Add "-ta=tesla:nordc" to pgcc compilation. 
+ * By default PGI uses runtime dynamic compilation (RDC) for the GPU code. 
+ * However RDC requires an extra link step (with nvlink) that gcc does not support. 
+ * The "nordc" sub-option disables RDC so you'll be able to use OpenACC code in a library. 
+ * However by disabling RDC you can no longer call external device routines from a compute region.
+ * 
+ * Create shared object :
  * gcc -shared -I.. -fPIC exampleModule.o compute_pi.o -o libexamplemodule.so -lc
  * 
  * To automatically load the library, add sym link in lib directory:

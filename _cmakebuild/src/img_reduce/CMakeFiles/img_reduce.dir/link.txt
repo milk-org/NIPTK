@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libimg_reduce.so -o libimg_reduce.so CMakeFiles/img_reduce.dir/img_reduce.c.o 

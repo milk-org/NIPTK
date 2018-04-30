@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libkdtree.so -o libkdtree.so CMakeFiles/kdtree.dir/kdtree.c.o 

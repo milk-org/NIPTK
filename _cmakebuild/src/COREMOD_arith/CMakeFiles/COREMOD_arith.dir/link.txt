@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libCOREMOD_arith.so -o libCOREMOD_arith.so CMakeFiles/COREMOD_arith.dir/COREMOD_arith.c.o 

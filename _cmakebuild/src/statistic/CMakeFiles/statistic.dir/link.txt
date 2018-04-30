@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libstatistic.so -o libstatistic.so CMakeFiles/statistic.dir/statistic.c.o 

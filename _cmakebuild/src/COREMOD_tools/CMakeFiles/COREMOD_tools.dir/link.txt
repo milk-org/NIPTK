@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libCOREMOD_tools.so -o libCOREMOD_tools.so CMakeFiles/COREMOD_tools.dir/COREMOD_tools.c.o 

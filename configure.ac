@@ -299,6 +299,36 @@ if test  "$magmaval" = "yes"; then
 fi
 
 
+
+#=================================================
+# Setup PGI openACC support
+
+# Check: enable PGI openACC ?
+AC_MSG_CHECKING([whether to use PGI openACC support])
+AC_ARG_ENABLE(pgiopenacc,
+    [AS_HELP_STRING(--enable-pgiopenacc,enable PGI openACC support)],
+    pgiopenacc="yes",
+    pgiopenacc="no")
+AC_MSG_RESULT([$pgiopenacc])
+
+
+# check to see if PGI openACC been selected
+if test "$pgiopenacc" == "no"; then
+    AC_MSG_WARN([Not using PGI openACC!])
+fi
+
+if test  "$pgiopenacc" = "yes"; then
+	AC_DEFINE([HAVE_PGIOPENACC],[1],[Defined if PGIopenACC should be used])
+	PGIPATH="/data1/soft/pgi/linux86-64/17.10"
+	GCCPATH="/usr/lib/gcc/x86_64-linux-gnu/7.2.0"
+	eval "ARRAY${N}='-D_PGIOPENACC'"
+    N=`expr $N + 1`
+    LIBS="-L$PGIPATH/lib -L$GCCPATH -lpgftnrtl -lpgmp -laccapi -laccg -laccn -laccg2 -ldl -lcudadevice -lgomp -lnuma -lpthread -lnspgc -lpgc -lm -lgcc -lc -lgcc $LIBS"
+    LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L$PGIPATH/lib"
+fi
+# -lpgftnrtl -lpgmp
+# -laccapi -laccg -laccn -laccg2 -ldl -lcudadevice -lgomp -lnuma -lpthread -lnspgc -lpgc -lm -lgcc -lc -lgcc
+
 #=================================================
 # Setup QDWHpartial
 

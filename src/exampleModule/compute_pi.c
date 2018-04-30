@@ -2,8 +2,8 @@
 // Choose one of the following:
 // gcc -c -fPIC compute_pi.c -Ofast
 // gcc -c compute_pi.c -fopenacc -foffload=nvptx-none -foffload="-O3" -Ofast
-// pgcc -c -fast compute_pi.c -ta=tesla:cc50 -Minfo=all
-// pgcc -c -fast compute_pi.c  
+// pgcc -c -fPIC -fast compute_pi.c -ta=tesla:cc50 -Minfo=all
+// pgcc -c -fPIC -fast compute_pi.c  
 
 
 

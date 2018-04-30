@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,libimage_basic.so -o libimage_basic.so CMakeFiles/image_basic.dir/image_basic.c.o 
