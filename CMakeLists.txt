@@ -4,13 +4,9 @@
 cmake_minimum_required (VERSION 3.1)
 project (milk C)
 
-
-
 # option example
 option(USE_IMAGE_BASIC
 	"Use module image_basic" ON)
-
-include_directories(${PROJECT_SOURCE_DIR}/src)
 
 message("PROJECT_SOURCE_DIR  = ${PROJECT_SOURCE_DIR}")
 message("PROJECT_SOURCE_BIN  = ${PROJECT_SOURCE_BIN}")
@@ -32,6 +28,7 @@ message("INCLUDE_DIRECTORIES = ${INCLUDE_DIRECTORIES}")
 # each library compile as SHARED
 #
 add_subdirectory ( "src/ImageStreamIO" )
+add_subdirectory ( "src/CommandLineInterface" )
 add_subdirectory ( "src/00CORE" )
 add_subdirectory ( "src/COREMOD_arith" )
 add_subdirectory ( "src/COREMOD_iofits" )
@@ -52,15 +49,57 @@ add_subdirectory ( "src/cudacomp" )
 add_subdirectory ( "src/kdtree" )
 add_subdirectory ( "src/linARfilterPred" )
 
-
-
 # main
-add_executable(milk src/CLImain.c src/CommandLineInterface/CLIcore.c src/CommandLineInterface/CLIcore.h src/CommandLineInterface/calc_bison.y src/CommandLineInterface/calc_flex.l src/CommandLineInterface/calc.h)
+add_executable(milk 
+src/CLImain.c)
 
-target_include_directories(milk PUBLIC ${PROJECT_SOURCE_DIR}/src)
+target_include_directories(milk PUBLIC
+${PROJECT_SOURCE_DIR}/src
+${GSL_INCLUDE_DIRS}
+${FFTW_INCLUDE_DIRS}
+${FFTWF_INCLUDE_DIRS}
+${CURSES_INCLUDE_DIR}
+)
 
-target_link_libraries (milk ImageStreamIO 00CORE COREMOD_arith COREMOD_iofits COREMOD_memory COREMOD_tools info fft statistic linopt_imtools image_gen image_filter image_basic ZernikePolyn image_format img_reduce psf cudacomp kdtree linARfilterPred)
+target_compile_options(milk PUBLIC 
+${FFTW_CFLAGS_OTHER}
+${FFTWF_CFLAGS_OTHER}
+-fopenmp)
 
 set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"me@me.com\\\"" )
+
+target_link_libraries (milk PUBLIC
+ImageStreamIO 
+CLIcore 
+00CORE 
+COREMOD_arith 
+COREMOD_iofits 
+COREMOD_memory 
+COREMOD_tools 
+info 
+fft 
+statistic 
+linopt_imtools 
+image_gen 
+image_filter 
+image_basic 
+ZernikePolyn 
+image_format 
+img_reduce 
+psf 
+cudacomp 
+kdtree 
+linARfilterPred
+m
+readline
+cfitsio
+dl
+rt
+gomp
+${GSL_LIBRARIES} 
+${FFTW_LIBRARIES}
+${FFTWF_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+${CURSES_LIBRARIES})
 
 install(TARGETS milk DESTINATION bin)

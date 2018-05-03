@@ -27,3 +27,4 @@ src/*/.libs/*
 */local/
 dochtml/
 
+build
