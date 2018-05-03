@@ -10,3 +10,14 @@ CMakeFiles/milk.dir/src/CLImain.c.o
  ../src/img_reduce/img_reduce.h
  ../src/psf/psf.h
  /data1/src/milk/src/CLImain.c
+CMakeFiles/milk.dir/src/CommandLineInterface/CLIcore.c.o
+ ../src/00CORE/00CORE.h
+ ../src/COREMOD_arith/COREMOD_arith.h
+ ../src/COREMOD_iofits/COREMOD_iofits.h
+ ../src/COREMOD_memory/COREMOD_memory.h
+ ../src/CommandLineInterface/CLIcore.h
+ ../src/CommandLineInterface/calc.h
+ ../src/CommandLineInterface/calc_bison.h
+ ../src/ImageStreamIO/ImageStreamIO.h
+ ../src/ImageStreamIO/ImageStruct.h
+ /data1/src/milk/src/CommandLineInterface/CLIcore.c

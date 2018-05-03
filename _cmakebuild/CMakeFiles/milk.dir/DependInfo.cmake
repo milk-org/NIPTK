@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/data1/src/milk/src/CLImain.c" "/data1/src/milk/_cmakebuild/CMakeFiles/milk.dir/src/CLImain.c.o"
+  "/data1/src/milk/src/CommandLineInterface/CLIcore.c" "/data1/src/milk/_cmakebuild/CMakeFiles/milk.dir/src/CommandLineInterface/CLIcore.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

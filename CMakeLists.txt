@@ -55,9 +55,12 @@ add_subdirectory ( "src/linARfilterPred" )
 
 
 # main
-add_executable(milk src/CLImain.c)
+add_executable(milk src/CLImain.c src/CommandLineInterface/CLIcore.c src/CommandLineInterface/CLIcore.h src/CommandLineInterface/calc_bison.y src/CommandLineInterface/calc_flex.l src/CommandLineInterface/calc.h)
+
 target_include_directories(milk PUBLIC ${PROJECT_SOURCE_DIR}/src)
 
 target_link_libraries (milk ImageStreamIO 00CORE COREMOD_arith COREMOD_iofits COREMOD_memory COREMOD_tools info fft statistic linopt_imtools image_gen image_filter image_basic ZernikePolyn image_format img_reduce psf cudacomp kdtree linARfilterPred)
+
+set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"me@me.com\\\"" )
 
 install(TARGETS milk DESTINATION bin)

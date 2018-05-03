@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/milk.dir/src/CLImain.c.o"
+  "CMakeFiles/milk.dir/src/CommandLineInterface/CLIcore.c.o"
   "milk.pdb"
   "milk"
 )
