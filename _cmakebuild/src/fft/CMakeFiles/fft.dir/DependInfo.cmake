@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/data1/src/milk/src/fft/fft.c" "/data1/src/milk/_build/src/fft/CMakeFiles/fft.dir/fft.c.o"
+  "/data1/src/milk/src/fft/fft.c" "/data1/src/milk/_cmakebuild/src/fft/CMakeFiles/fft.dir/fft.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

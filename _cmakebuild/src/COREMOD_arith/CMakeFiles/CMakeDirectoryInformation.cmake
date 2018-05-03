@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/data1/src/milk")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/data1/src/milk/_build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/data1/src/milk/_cmakebuild")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

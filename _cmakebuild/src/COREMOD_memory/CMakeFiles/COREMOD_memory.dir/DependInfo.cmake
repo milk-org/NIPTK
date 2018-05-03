@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/data1/src/milk/src/COREMOD_memory/COREMOD_memory.c" "/data1/src/milk/_build/src/COREMOD_memory/CMakeFiles/COREMOD_memory.dir/COREMOD_memory.c.o"
+  "/data1/src/milk/src/COREMOD_memory/COREMOD_memory.c" "/data1/src/milk/_cmakebuild/src/COREMOD_memory/CMakeFiles/COREMOD_memory.dir/COREMOD_memory.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

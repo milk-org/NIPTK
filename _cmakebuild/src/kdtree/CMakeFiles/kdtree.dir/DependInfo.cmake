@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/data1/src/milk/src/kdtree/kdtree.c" "/data1/src/milk/_build/src/kdtree/CMakeFiles/kdtree.dir/kdtree.c.o"
+  "/data1/src/milk/src/kdtree/kdtree.c" "/data1/src/milk/_cmakebuild/src/kdtree/CMakeFiles/kdtree.dir/kdtree.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/data1/src/milk/src/COREMOD_arith/COREMOD_arith.c" "/data1/src/milk/_build/src/COREMOD_arith/CMakeFiles/COREMOD_arith.dir/COREMOD_arith.c.o"
+  "/data1/src/milk/src/COREMOD_arith/COREMOD_arith.c" "/data1/src/milk/_cmakebuild/src/COREMOD_arith/CMakeFiles/COREMOD_arith.dir/COREMOD_arith.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

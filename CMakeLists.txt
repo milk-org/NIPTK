@@ -2,16 +2,35 @@
 # cmake .. -DCMAKE_INSTALL_PREFIX=../_install
 
 cmake_minimum_required (VERSION 3.1)
-project (milk)
+project (milk C)
+
+
 
 # option example
 option(USE_IMAGE_BASIC
 	"Use module image_basic" ON)
 
-include_directories ("${PROJECT_SOURCE_DIR}/src")
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
+message("PROJECT_SOURCE_DIR  = ${PROJECT_SOURCE_DIR}")
+message("PROJECT_SOURCE_BIN  = ${PROJECT_SOURCE_BIN}")
+message("INCLUDE_DIRECTORIES = ${INCLUDE_DIRECTORIES}")
+                                
+# QUESTION 1: why is INCLUDE_DIRECTORIES not updated ?
+# PROJECT_SOURCE_DIR  = /data1/src/milk
+# PROJECT_SOURCE_BIN  = 
+# INCLUDE_DIRECTORIES = 
 
 
-# libraries
+# QUESTION 2: is there a more concise way to write this ?
+# using a list ?
+
+# QUESTION 3: How to set up FLEX and BISON steps
+
+#                               
+# recursively add libraries to be compiled
+# each library compile as SHARED
+#
 add_subdirectory ( "src/ImageStreamIO" )
 add_subdirectory ( "src/00CORE" )
 add_subdirectory ( "src/COREMOD_arith" )
@@ -37,6 +56,8 @@ add_subdirectory ( "src/linARfilterPred" )
 
 # main
 add_executable(milk src/CLImain.c)
+target_include_directories(milk PUBLIC ${PROJECT_SOURCE_DIR}/src)
+
 target_link_libraries (milk ImageStreamIO 00CORE COREMOD_arith COREMOD_iofits COREMOD_memory COREMOD_tools info fft statistic linopt_imtools image_gen image_filter image_basic ZernikePolyn image_format img_reduce psf cudacomp kdtree linARfilterPred)
 
 install(TARGETS milk DESTINATION bin)

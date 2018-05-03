@@ -39,12 +39,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/data1/src/milk/_build/milk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/data1/src/milk/_cmakebuild/milk")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk"
-         OLD_RPATH "/data1/src/milk/_build/src/ImageStreamIO:/data1/src/milk/_build/src/00CORE:/data1/src/milk/_build/src/COREMOD_arith:/data1/src/milk/_build/src/COREMOD_iofits:/data1/src/milk/_build/src/COREMOD_memory:/data1/src/milk/_build/src/COREMOD_tools:/data1/src/milk/_build/src/info:/data1/src/milk/_build/src/fft:/data1/src/milk/_build/src/statistic:/data1/src/milk/_build/src/linopt_imtools:/data1/src/milk/_build/src/image_gen:/data1/src/milk/_build/src/image_filter:/data1/src/milk/_build/src/image_basic:/data1/src/milk/_build/src/ZernikePolyn:/data1/src/milk/_build/src/image_format:/data1/src/milk/_build/src/img_reduce:/data1/src/milk/_build/src/psf:/data1/src/milk/_build/src/cudacomp:/data1/src/milk/_build/src/kdtree:/data1/src/milk/_build/src/linARfilterPred:"
+         OLD_RPATH "/data1/src/milk/_cmakebuild/src/ImageStreamIO:/data1/src/milk/_cmakebuild/src/00CORE:/data1/src/milk/_cmakebuild/src/COREMOD_arith:/data1/src/milk/_cmakebuild/src/COREMOD_iofits:/data1/src/milk/_cmakebuild/src/COREMOD_memory:/data1/src/milk/_cmakebuild/src/COREMOD_tools:/data1/src/milk/_cmakebuild/src/info:/data1/src/milk/_cmakebuild/src/fft:/data1/src/milk/_cmakebuild/src/statistic:/data1/src/milk/_cmakebuild/src/linopt_imtools:/data1/src/milk/_cmakebuild/src/image_gen:/data1/src/milk/_cmakebuild/src/image_filter:/data1/src/milk/_cmakebuild/src/image_basic:/data1/src/milk/_cmakebuild/src/ZernikePolyn:/data1/src/milk/_cmakebuild/src/image_format:/data1/src/milk/_cmakebuild/src/img_reduce:/data1/src/milk/_cmakebuild/src/psf:/data1/src/milk/_cmakebuild/src/cudacomp:/data1/src/milk/_cmakebuild/src/kdtree:/data1/src/milk/_cmakebuild/src/linARfilterPred:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk")
@@ -54,26 +54,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/data1/src/milk/_build/src/ImageStreamIO/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/00CORE/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/COREMOD_arith/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/COREMOD_iofits/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/COREMOD_memory/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/COREMOD_tools/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/info/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/fft/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/statistic/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/linopt_imtools/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/image_gen/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/image_filter/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/image_basic/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/ZernikePolyn/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/image_format/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/img_reduce/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/psf/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/cudacomp/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/kdtree/cmake_install.cmake")
-  include("/data1/src/milk/_build/src/linARfilterPred/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/ImageStreamIO/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/00CORE/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/COREMOD_arith/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/COREMOD_iofits/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/COREMOD_memory/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/COREMOD_tools/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/info/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/fft/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/statistic/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/linopt_imtools/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/image_gen/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/image_filter/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/image_basic/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/ZernikePolyn/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/image_format/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/img_reduce/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/psf/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/cudacomp/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/kdtree/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/linARfilterPred/cmake_install.cmake")
 
 endif()
 
@@ -85,5 +85,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/data1/src/milk/_build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data1/src/milk/_cmakebuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

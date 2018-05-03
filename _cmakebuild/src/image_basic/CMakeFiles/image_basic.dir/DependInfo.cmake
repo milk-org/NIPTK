@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/data1/src/milk/src/image_basic/image_basic.c" "/data1/src/milk/_build/src/image_basic/CMakeFiles/image_basic.dir/image_basic.c.o"
+  "/data1/src/milk/src/image_basic/image_basic.c" "/data1/src/milk/_cmakebuild/src/image_basic/CMakeFiles/image_basic.dir/image_basic.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

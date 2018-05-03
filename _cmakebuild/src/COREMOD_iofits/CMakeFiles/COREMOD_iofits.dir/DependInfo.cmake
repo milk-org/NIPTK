@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/data1/src/milk/src/COREMOD_iofits/COREMOD_iofits.c" "/data1/src/milk/_build/src/COREMOD_iofits/CMakeFiles/COREMOD_iofits.dir/COREMOD_iofits.c.o"
+  "/data1/src/milk/src/COREMOD_iofits/COREMOD_iofits.c" "/data1/src/milk/_cmakebuild/src/COREMOD_iofits/CMakeFiles/COREMOD_iofits.dir/COREMOD_iofits.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
