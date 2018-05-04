@@ -17,6 +17,18 @@
 //Dependencies for target
 00CORE_LIB_DEPENDS:STATIC=
 
+//path to the bison executable
+BISON_EXECUTABLE:FILEPATH=/usr/bin/bison
+
+//Value Computed by CMake
+CLIcore_BINARY_DIR:STATIC=/data1/src/milk/_cmakebuild/src/CommandLineInterface
+
+//Dependencies for the target
+CLIcore_LIB_DEPENDS:STATIC=general;m;general;readline;general;cfitsio;general;dl;general;rt;general;gomp;general;/usr/lib/x86_64-linux-gnu/libgsl.so;general;/usr/lib/x86_64-linux-gnu/libgslcblas.so;general;fftw3;general;fftw3f;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libcurses.so;general;/usr/lib/x86_64-linux-gnu/libform.so;
+
+//Value Computed by CMake
+CLIcore_SOURCE_DIR:STATIC=/data1/src/milk/src/CommandLineInterface
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -84,7 +96,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/data1/src/milk/_install
+CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
@@ -180,8 +192,55 @@ COREMOD_memory_LIB_DEPENDS:STATIC=
 //Dependencies for target
 COREMOD_tools_LIB_DEPENDS:STATIC=
 
+//Path to a library.
+CURSES_CURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurses.so
+
+//Path to a library.
+CURSES_FORM_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libform.so
+
+//Path to a file.
+CURSES_INCLUDE_PATH:PATH=/usr/include
+
+//Path to a library.
+CURSES_NCURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libncurses.so
+
+//path to the flex executable
+FLEX_EXECUTABLE:FILEPATH=/usr/bin/flex
+
+//Path to the flex headers
+FLEX_INCLUDE_DIR:PATH=/usr/include
+
+//Path to the fl library
+FL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfl.so
+
+//Path to a library.
+GSL_CBLAS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgslcblas.so
+
+//Path to a library.
+GSL_CBLAS_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libgslcblas.so
+
+//Path to a file.
+GSL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+GSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgsl.so
+
+//Path to a library.
+GSL_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libgsl.so
+
+GSL_ROOT_DIR:STRING=/usr
+
+//Value Computed by CMake
+ImageStreamIO_BINARY_DIR:STATIC=/data1/src/milk/_cmakebuild/src/ImageStreamIO
+
 //Dependencies for target
 ImageStreamIO_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+ImageStreamIO_SOURCE_DIR:STATIC=/data1/src/milk/src/ImageStreamIO
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Use module image_basic
 USE_IMAGE_BASIC:BOOL=ON
@@ -194,9 +253,6 @@ cudacomp_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 fft_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-imageStreamIO_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 image_basic_LIB_DEPENDS:STATIC=
@@ -250,12 +306,6 @@ lib_COREMOD_tools_project_BINARY_DIR:STATIC=/data1/src/milk/_cmakebuild/src/CORE
 lib_COREMOD_tools_project_SOURCE_DIR:STATIC=/data1/src/milk/src/COREMOD_tools
 
 //Value Computed by CMake
-lib_ImageStreamIO_project_BINARY_DIR:STATIC=/data1/src/milk/_cmakebuild/src/ImageStreamIO
-
-//Value Computed by CMake
-lib_ImageStreamIO_project_SOURCE_DIR:STATIC=/data1/src/milk/src/ImageStreamIO
-
-//Value Computed by CMake
 lib_ZernikePolyn_project_BINARY_DIR:STATIC=/data1/src/milk/_cmakebuild/src/ZernikePolyn
 
 //Value Computed by CMake
@@ -272,12 +322,6 @@ lib_fft_project_BINARY_DIR:STATIC=/data1/src/milk/_cmakebuild/src/fft
 
 //Value Computed by CMake
 lib_fft_project_SOURCE_DIR:STATIC=/data1/src/milk/src/fft
-
-//Value Computed by CMake
-lib_imageStreamIO_project_BINARY_DIR:STATIC=/data1/src/milk/_build/src/ImageStreamIO
-
-//Value Computed by CMake
-lib_imageStreamIO_project_SOURCE_DIR:STATIC=/data1/src/milk/src/ImageStreamIO
 
 //Value Computed by CMake
 lib_image_basic_project_BINARY_DIR:STATIC=/data1/src/milk/_cmakebuild/src/image_basic
@@ -368,6 +412,8 @@ statistic_LIB_DEPENDS:STATIC=
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: BISON_EXECUTABLE
+BISON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -434,6 +480,14 @@ CMAKE_GENERATOR:INTERNAL=Unix Makefiles
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Have symbol pthread_create
+CMAKE_HAVE_LIBC_CREATE:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/data1/src/milk
@@ -456,7 +510,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -495,4 +549,148 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURSES_CURSES_LIBRARY
+CURSES_CURSES_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURSES_INCLUDE_PATH
+CURSES_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURSES_NCURSES_LIBRARY
+CURSES_NCURSES_LIBRARY-ADVANCED:INTERNAL=1
+FFTWF_CFLAGS:INTERNAL=
+FFTWF_CFLAGS_I:INTERNAL=
+FFTWF_CFLAGS_OTHER:INTERNAL=
+FFTWF_FOUND:INTERNAL=1
+FFTWF_INCLUDEDIR:INTERNAL=/usr/include
+FFTWF_INCLUDE_DIRS:INTERNAL=
+FFTWF_LDFLAGS:INTERNAL=-lfftw3f
+FFTWF_LDFLAGS_OTHER:INTERNAL=
+FFTWF_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFTWF_LIBRARIES:INTERNAL=fftw3f
+FFTWF_LIBRARY_DIRS:INTERNAL=
+FFTWF_LIBS:INTERNAL=
+FFTWF_LIBS_L:INTERNAL=
+FFTWF_LIBS_OTHER:INTERNAL=
+FFTWF_LIBS_PATHS:INTERNAL=
+FFTWF_PREFIX:INTERNAL=/usr
+FFTWF_STATIC_CFLAGS:INTERNAL=
+FFTWF_STATIC_CFLAGS_I:INTERNAL=
+FFTWF_STATIC_CFLAGS_OTHER:INTERNAL=
+FFTWF_STATIC_INCLUDE_DIRS:INTERNAL=
+FFTWF_STATIC_LDFLAGS:INTERNAL=-lfftw3f;-lm
+FFTWF_STATIC_LDFLAGS_OTHER:INTERNAL=
+FFTWF_STATIC_LIBDIR:INTERNAL=
+FFTWF_STATIC_LIBRARIES:INTERNAL=fftw3f;m
+FFTWF_STATIC_LIBRARY_DIRS:INTERNAL=
+FFTWF_STATIC_LIBS:INTERNAL=
+FFTWF_STATIC_LIBS_L:INTERNAL=
+FFTWF_STATIC_LIBS_OTHER:INTERNAL=
+FFTWF_STATIC_LIBS_PATHS:INTERNAL=
+FFTWF_VERSION:INTERNAL=3.3.4
+FFTWF_fftw3f_INCLUDEDIR:INTERNAL=
+FFTWF_fftw3f_LIBDIR:INTERNAL=
+FFTWF_fftw3f_PREFIX:INTERNAL=
+FFTWF_fftw3f_VERSION:INTERNAL=
+FFTW_CFLAGS:INTERNAL=
+FFTW_CFLAGS_I:INTERNAL=
+FFTW_CFLAGS_OTHER:INTERNAL=
+FFTW_FOUND:INTERNAL=1
+FFTW_INCLUDEDIR:INTERNAL=/usr/include
+FFTW_INCLUDE_DIRS:INTERNAL=
+FFTW_LDFLAGS:INTERNAL=-lfftw3
+FFTW_LDFLAGS_OTHER:INTERNAL=
+FFTW_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFTW_LIBRARIES:INTERNAL=fftw3
+FFTW_LIBRARY_DIRS:INTERNAL=
+FFTW_LIBS:INTERNAL=
+FFTW_LIBS_L:INTERNAL=
+FFTW_LIBS_OTHER:INTERNAL=
+FFTW_LIBS_PATHS:INTERNAL=
+FFTW_PREFIX:INTERNAL=/usr
+FFTW_STATIC_CFLAGS:INTERNAL=
+FFTW_STATIC_CFLAGS_I:INTERNAL=
+FFTW_STATIC_CFLAGS_OTHER:INTERNAL=
+FFTW_STATIC_INCLUDE_DIRS:INTERNAL=
+FFTW_STATIC_LDFLAGS:INTERNAL=-lfftw3;-lm
+FFTW_STATIC_LDFLAGS_OTHER:INTERNAL=
+FFTW_STATIC_LIBDIR:INTERNAL=
+FFTW_STATIC_LIBRARIES:INTERNAL=fftw3;m
+FFTW_STATIC_LIBRARY_DIRS:INTERNAL=
+FFTW_STATIC_LIBS:INTERNAL=
+FFTW_STATIC_LIBS_L:INTERNAL=
+FFTW_STATIC_LIBS_OTHER:INTERNAL=
+FFTW_STATIC_LIBS_PATHS:INTERNAL=
+FFTW_VERSION:INTERNAL=3.3.4
+FFTW_fftw3_INCLUDEDIR:INTERNAL=
+FFTW_fftw3_LIBDIR:INTERNAL=
+FFTW_fftw3_PREFIX:INTERNAL=
+FFTW_fftw3_VERSION:INTERNAL=
+//Details about finding BISON
+FIND_PACKAGE_MESSAGE_DETAILS_BISON:INTERNAL=[/usr/bin/bison][v3.0.4()]
+//Details about finding Curses
+FIND_PACKAGE_MESSAGE_DETAILS_Curses:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurses.so][/usr/include][v()]
+//Details about finding FLEX
+FIND_PACKAGE_MESSAGE_DETAILS_FLEX:INTERNAL=[/usr/bin/flex][v2.6.0()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: FLEX_EXECUTABLE
+FLEX_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FLEX_INCLUDE_DIR
+FLEX_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FL_LIBRARY
+FL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GSL_CBLAS_LIBRARY
+GSL_CBLAS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GSL_CBLAS_LIBRARY_DEBUG
+GSL_CBLAS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+GSL_CFLAGS:INTERNAL=
+GSL_CFLAGS_I:INTERNAL=
+GSL_CFLAGS_OTHER:INTERNAL=
+GSL_FOUND:INTERNAL=1
+GSL_INCLUDEDIR:INTERNAL=/usr/include
+//ADVANCED property for variable: GSL_INCLUDE_DIR
+GSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+GSL_INCLUDE_DIRS:INTERNAL=
+GSL_LDFLAGS:INTERNAL=-lgsl;-lgslcblas;-lm
+GSL_LDFLAGS_OTHER:INTERNAL=
+GSL_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+GSL_LIBRARIES:INTERNAL=gsl;gslcblas;m
+//ADVANCED property for variable: GSL_LIBRARY
+GSL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GSL_LIBRARY_DEBUG
+GSL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+GSL_LIBRARY_DIRS:INTERNAL=
+GSL_LIBS:INTERNAL=
+GSL_LIBS_L:INTERNAL=
+GSL_LIBS_OTHER:INTERNAL=
+GSL_LIBS_PATHS:INTERNAL=
+GSL_PREFIX:INTERNAL=/usr
+//ADVANCED property for variable: GSL_ROOT_DIR
+GSL_ROOT_DIR-ADVANCED:INTERNAL=1
+GSL_STATIC_CFLAGS:INTERNAL=
+GSL_STATIC_CFLAGS_I:INTERNAL=
+GSL_STATIC_CFLAGS_OTHER:INTERNAL=
+GSL_STATIC_INCLUDE_DIRS:INTERNAL=
+GSL_STATIC_LDFLAGS:INTERNAL=-lgsl;-lgslcblas;-lm
+GSL_STATIC_LDFLAGS_OTHER:INTERNAL=
+GSL_STATIC_LIBDIR:INTERNAL=
+GSL_STATIC_LIBRARIES:INTERNAL=gsl;gslcblas;m
+GSL_STATIC_LIBRARY_DIRS:INTERNAL=
+GSL_STATIC_LIBS:INTERNAL=
+GSL_STATIC_LIBS_L:INTERNAL=
+GSL_STATIC_LIBS_OTHER:INTERNAL=
+GSL_STATIC_LIBS_PATHS:INTERNAL=
+//ADVANCED property for variable: GSL_VERSION
+GSL_VERSION-ADVANCED:INTERNAL=1
+GSL_VERSION:INTERNAL=2.1
+GSL_gsl_INCLUDEDIR:INTERNAL=
+GSL_gsl_LIBDIR:INTERNAL=
+GSL_gsl_PREFIX:INTERNAL=
+GSL_gsl_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+__pkg_config_checked_FFTW:INTERNAL=1
+__pkg_config_checked_FFTWF:INTERNAL=1
+__pkg_config_checked_GSL:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

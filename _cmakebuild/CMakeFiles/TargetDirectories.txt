@@ -12,6 +12,13 @@
 /data1/src/milk/_cmakebuild/src/ImageStreamIO/CMakeFiles/list_install_components.dir
 /data1/src/milk/_cmakebuild/src/ImageStreamIO/CMakeFiles/install.dir
 /data1/src/milk/_cmakebuild/src/ImageStreamIO/CMakeFiles/edit_cache.dir
+/data1/src/milk/_cmakebuild/src/CommandLineInterface/CMakeFiles/rebuild_cache.dir
+/data1/src/milk/_cmakebuild/src/CommandLineInterface/CMakeFiles/install/strip.dir
+/data1/src/milk/_cmakebuild/src/CommandLineInterface/CMakeFiles/CLIcore.dir
+/data1/src/milk/_cmakebuild/src/CommandLineInterface/CMakeFiles/install.dir
+/data1/src/milk/_cmakebuild/src/CommandLineInterface/CMakeFiles/install/local.dir
+/data1/src/milk/_cmakebuild/src/CommandLineInterface/CMakeFiles/list_install_components.dir
+/data1/src/milk/_cmakebuild/src/CommandLineInterface/CMakeFiles/edit_cache.dir
 /data1/src/milk/_cmakebuild/src/00CORE/CMakeFiles/rebuild_cache.dir
 /data1/src/milk/_cmakebuild/src/00CORE/CMakeFiles/install/strip.dir
 /data1/src/milk/_cmakebuild/src/00CORE/CMakeFiles/00CORE.dir

@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -Dstatistic_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/statistic/src -I/data1/src/milk/src/statistic/.. 
+C_INCLUDES = -I/data1/src/milk/src/statistic/src -I/data1/src/milk/src/statistic/.. 
 

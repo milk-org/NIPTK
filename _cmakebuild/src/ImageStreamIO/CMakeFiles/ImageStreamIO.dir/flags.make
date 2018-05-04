@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -DImageStreamIO_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/ImageStreamIO/src -I/data1/src/milk/src/ImageStreamIO/.. 
+C_INCLUDES = -I/data1/src/milk/src/ImageStreamIO/src -I/data1/src/milk/src/ImageStreamIO/.. 
 

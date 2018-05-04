@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../src/00CORE/00CORE.h
+../src/COREMOD_tools/../00CORE/00CORE.h
 
-../src/COREMOD_memory/COREMOD_memory.h
+../src/COREMOD_tools/../COREMOD_memory/COREMOD_memory.h
 
-../src/COREMOD_tools/COREMOD_tools.h
+../src/COREMOD_tools/../COREMOD_tools/COREMOD_tools.h
 
-../src/CommandLineInterface/CLIcore.h
+../src/COREMOD_tools/../CommandLineInterface/CLIcore.h
 stdint.h
 -
 stdio.h
@@ -34,9 +34,9 @@ gsl/gsl_rng.h
 signal.h
 -
 ImageStreamIO/ImageStruct.h
-../src/CommandLineInterface/ImageStreamIO/ImageStruct.h
+../src/COREMOD_tools/../CommandLineInterface/ImageStreamIO/ImageStruct.h
 
-../src/ImageStreamIO/ImageStruct.h
+../src/COREMOD_tools/../ImageStreamIO/ImageStruct.h
 stdint.h
 -
 stdio.h
@@ -52,7 +52,7 @@ unistd.h
 semaphore.h
 -
 
-../src/info/info.h
+../src/COREMOD_tools/../info/info.h
 
 /data1/src/milk/src/COREMOD_tools/COREMOD_tools.c
 stdint.h

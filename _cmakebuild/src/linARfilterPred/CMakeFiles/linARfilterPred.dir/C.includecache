@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../src/00CORE/00CORE.h
+../src/linARfilterPred/../00CORE/00CORE.h
 
-../src/COREMOD_arith/COREMOD_arith.h
+../src/linARfilterPred/../COREMOD_arith/COREMOD_arith.h
 
-../src/COREMOD_iofits/COREMOD_iofits.h
+../src/linARfilterPred/../COREMOD_iofits/COREMOD_iofits.h
 
-../src/COREMOD_memory/COREMOD_memory.h
+../src/linARfilterPred/../COREMOD_memory/COREMOD_memory.h
 
-../src/COREMOD_tools/COREMOD_tools.h
+../src/linARfilterPred/../COREMOD_tools/COREMOD_tools.h
 
-../src/CommandLineInterface/CLIcore.h
+../src/linARfilterPred/../CommandLineInterface/CLIcore.h
 stdint.h
 -
 stdio.h
@@ -38,9 +38,9 @@ gsl/gsl_rng.h
 signal.h
 -
 ImageStreamIO/ImageStruct.h
-../src/CommandLineInterface/ImageStreamIO/ImageStruct.h
+../src/linARfilterPred/../CommandLineInterface/ImageStreamIO/ImageStruct.h
 
-../src/ImageStreamIO/ImageStruct.h
+../src/linARfilterPred/../ImageStreamIO/ImageStruct.h
 stdint.h
 -
 stdio.h
@@ -56,7 +56,7 @@ unistd.h
 semaphore.h
 -
 
-../src/cudacomp/cudacomp.h
+../src/linARfilterPred/../cudacomp/cudacomp.h
 cuda_runtime_api.h
 -
 cuda_runtime.h
@@ -68,13 +68,13 @@ device_types.h
 pthread.h
 -
 
-../src/info/info.h
+../src/linARfilterPred/../info/info.h
 
-../src/linARfilterPred/linARfilterPred.h
+../src/linARfilterPred/../linARfilterPred/linARfilterPred.h
 
-../src/linopt_imtools/linopt_imtools.h
+../src/linARfilterPred/../linopt_imtools/linopt_imtools.h
 
-../src/statistic/statistic.h
+../src/linARfilterPred/../statistic/statistic.h
 
 /data1/src/milk/src/linARfilterPred/linARfilterPred.c
 stdint.h

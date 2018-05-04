@@ -9,13 +9,8 @@ option(USE_IMAGE_BASIC
 	"Use module image_basic" ON)
 
 message("PROJECT_SOURCE_DIR  = ${PROJECT_SOURCE_DIR}")
-message("PROJECT_SOURCE_BIN  = ${PROJECT_SOURCE_BIN}")
-message("INCLUDE_DIRECTORIES = ${INCLUDE_DIRECTORIES}")
-                                
-# QUESTION 1: why is INCLUDE_DIRECTORIES not updated ?
-# PROJECT_SOURCE_DIR  = /data1/src/milk
-# PROJECT_SOURCE_BIN  = 
-# INCLUDE_DIRECTORIES = 
+
+
 
 
 # QUESTION 2: is there a more concise way to write this ?
@@ -69,21 +64,21 @@ ${FFTWF_CFLAGS_OTHER}
 set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"me@me.com\\\"" )
 
 target_link_libraries (milk PUBLIC
-ImageStreamIO 
 CLIcore 
 00CORE 
 COREMOD_arith 
-COREMOD_iofits 
 COREMOD_memory 
+ImageStreamIO 
 COREMOD_tools 
 info 
-fft 
-statistic 
+fft
 linopt_imtools 
-image_gen 
-image_filter 
-image_basic 
-ZernikePolyn 
+image_basic
+COREMOD_iofits 
+ZernikePolyn
+image_filter
+image_gen
+statistic
 image_format 
 img_reduce 
 psf 

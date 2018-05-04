@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -DCOREMOD_memory_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/COREMOD_memory/src -I/data1/src/milk/src/COREMOD_memory/.. 
+C_INCLUDES = -I/data1/src/milk/src/COREMOD_memory/src -I/data1/src/milk/src/COREMOD_memory/.. 
 

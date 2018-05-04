@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -DFFTCONFIGDIR=\"/data1/src/milk/src/fft/config\"
 
 C_DEFINES = -Dfft_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/fft/src -I/data1/src/milk/src/fft/.. 
+C_INCLUDES = -I/data1/src/milk/src/fft/src -I/data1/src/milk/src/fft/.. 
 

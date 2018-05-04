@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../src/00CORE/00CORE.h
+../src/fft/../00CORE/00CORE.h
 
-../src/COREMOD_arith/COREMOD_arith.h
+../src/fft/../COREMOD_arith/COREMOD_arith.h
 
-../src/COREMOD_iofits/COREMOD_iofits.h
+../src/fft/../COREMOD_iofits/COREMOD_iofits.h
 
-../src/COREMOD_memory/COREMOD_memory.h
+../src/fft/../COREMOD_memory/COREMOD_memory.h
 
-../src/COREMOD_tools/COREMOD_tools.h
+../src/fft/../COREMOD_tools/COREMOD_tools.h
 
-../src/CommandLineInterface/CLIcore.h
+../src/fft/../CommandLineInterface/CLIcore.h
 stdint.h
 -
 stdio.h
@@ -38,9 +38,9 @@ gsl/gsl_rng.h
 signal.h
 -
 ImageStreamIO/ImageStruct.h
-../src/CommandLineInterface/ImageStreamIO/ImageStruct.h
+../src/fft/../CommandLineInterface/ImageStreamIO/ImageStruct.h
 
-../src/ImageStreamIO/ImageStruct.h
+../src/fft/../ImageStreamIO/ImageStruct.h
 stdint.h
 -
 stdio.h
@@ -56,7 +56,7 @@ unistd.h
 semaphore.h
 -
 
-../src/fft/fft.h
+../src/fft/../fft/fft.h
 
 /data1/src/milk/src/fft/fft.c
 stdint.h

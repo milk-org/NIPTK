@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -Dlinopt_imtools_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/linopt_imtools/src -I/data1/src/milk/src/linopt_imtools/.. 
+C_INCLUDES = -I/data1/src/milk/src/linopt_imtools/src -I/data1/src/milk/src/linopt_imtools/.. 
 

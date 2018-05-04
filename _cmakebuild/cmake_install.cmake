@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/data1/src/milk/_install")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk"
-         OLD_RPATH "/data1/src/milk/_cmakebuild/src/ImageStreamIO:/data1/src/milk/_cmakebuild/src/00CORE:/data1/src/milk/_cmakebuild/src/COREMOD_arith:/data1/src/milk/_cmakebuild/src/COREMOD_iofits:/data1/src/milk/_cmakebuild/src/COREMOD_memory:/data1/src/milk/_cmakebuild/src/COREMOD_tools:/data1/src/milk/_cmakebuild/src/info:/data1/src/milk/_cmakebuild/src/fft:/data1/src/milk/_cmakebuild/src/statistic:/data1/src/milk/_cmakebuild/src/linopt_imtools:/data1/src/milk/_cmakebuild/src/image_gen:/data1/src/milk/_cmakebuild/src/image_filter:/data1/src/milk/_cmakebuild/src/image_basic:/data1/src/milk/_cmakebuild/src/ZernikePolyn:/data1/src/milk/_cmakebuild/src/image_format:/data1/src/milk/_cmakebuild/src/img_reduce:/data1/src/milk/_cmakebuild/src/psf:/data1/src/milk/_cmakebuild/src/cudacomp:/data1/src/milk/_cmakebuild/src/kdtree:/data1/src/milk/_cmakebuild/src/linARfilterPred:"
+         OLD_RPATH "/data1/src/milk/_cmakebuild/src/CommandLineInterface:/data1/src/milk/_cmakebuild/src/00CORE:/data1/src/milk/_cmakebuild/src/COREMOD_arith:/data1/src/milk/_cmakebuild/src/COREMOD_memory:/data1/src/milk/_cmakebuild/src/ImageStreamIO:/data1/src/milk/_cmakebuild/src/COREMOD_tools:/data1/src/milk/_cmakebuild/src/info:/data1/src/milk/_cmakebuild/src/fft:/data1/src/milk/_cmakebuild/src/linopt_imtools:/data1/src/milk/_cmakebuild/src/image_basic:/data1/src/milk/_cmakebuild/src/COREMOD_iofits:/data1/src/milk/_cmakebuild/src/ZernikePolyn:/data1/src/milk/_cmakebuild/src/image_filter:/data1/src/milk/_cmakebuild/src/image_gen:/data1/src/milk/_cmakebuild/src/statistic:/data1/src/milk/_cmakebuild/src/image_format:/data1/src/milk/_cmakebuild/src/img_reduce:/data1/src/milk/_cmakebuild/src/psf:/data1/src/milk/_cmakebuild/src/cudacomp:/data1/src/milk/_cmakebuild/src/kdtree:/data1/src/milk/_cmakebuild/src/linARfilterPred:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/milk")
@@ -55,6 +55,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/data1/src/milk/_cmakebuild/src/ImageStreamIO/cmake_install.cmake")
+  include("/data1/src/milk/_cmakebuild/src/CommandLineInterface/cmake_install.cmake")
   include("/data1/src/milk/_cmakebuild/src/00CORE/cmake_install.cmake")
   include("/data1/src/milk/_cmakebuild/src/COREMOD_arith/cmake_install.cmake")
   include("/data1/src/milk/_cmakebuild/src/COREMOD_iofits/cmake_install.cmake")

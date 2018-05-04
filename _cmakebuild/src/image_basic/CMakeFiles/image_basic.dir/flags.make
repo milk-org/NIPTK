@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -Dimage_basic_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/image_basic/src -I/data1/src/milk/src/image_basic/.. 
+C_INCLUDES = -I/data1/src/milk/src/image_basic/src -I/data1/src/milk/src/image_basic/.. 
 

@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -DZernikePolyn_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/ZernikePolyn/src -I/data1/src/milk/src/ZernikePolyn/.. 
+C_INCLUDES = -I/data1/src/milk/src/ZernikePolyn/src -I/data1/src/milk/src/ZernikePolyn/.. 
 

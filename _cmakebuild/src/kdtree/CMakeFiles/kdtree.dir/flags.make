@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -Dkdtree_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/kdtree/src -I/data1/src/milk/src/kdtree/.. 
+C_INCLUDES = -I/data1/src/milk/src/kdtree/src -I/data1/src/milk/src/kdtree/.. 
 

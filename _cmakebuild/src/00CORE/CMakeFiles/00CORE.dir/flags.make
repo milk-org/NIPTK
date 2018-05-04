@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -D_00CORE_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/00CORE/src -I/data1/src/milk/src/00CORE/.. 
+C_INCLUDES = -I/data1/src/milk/src/00CORE/src -I/data1/src/milk/src/00CORE/.. 
 

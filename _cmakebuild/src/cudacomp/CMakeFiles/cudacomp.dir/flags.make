@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -Dcudacomp_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/cudacomp/src -I/data1/src/milk/src/cudacomp/.. 
+C_INCLUDES = -I/data1/src/milk/src/cudacomp/src -I/data1/src/milk/src/cudacomp/.. 
 

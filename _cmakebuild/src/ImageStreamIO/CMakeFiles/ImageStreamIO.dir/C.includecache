@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../src/ImageStreamIO/ImageStreamIO.h
+../src/ImageStreamIO/../ImageStreamIO/ImageStreamIO.h
 
-../src/ImageStreamIO/ImageStruct.h
+../src/ImageStreamIO/../ImageStreamIO/ImageStruct.h
 stdint.h
 -
 stdio.h

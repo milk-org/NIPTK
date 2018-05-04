@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -DCOREMOD_tools_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/COREMOD_tools/src -I/data1/src/milk/src/COREMOD_tools/.. 
+C_INCLUDES = -I/data1/src/milk/src/COREMOD_tools/src -I/data1/src/milk/src/COREMOD_tools/.. 
 

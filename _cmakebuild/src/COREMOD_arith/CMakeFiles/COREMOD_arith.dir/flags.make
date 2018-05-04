@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -DCOREMOD_arith_EXPORTS
 
-C_INCLUDES = -I/data1/src/milk/src -I/data1/src/milk/src/COREMOD_arith/src -I/data1/src/milk/src/COREMOD_arith/.. 
+C_INCLUDES = -I/data1/src/milk/src/COREMOD_arith/src -I/data1/src/milk/src/COREMOD_arith/.. 
 

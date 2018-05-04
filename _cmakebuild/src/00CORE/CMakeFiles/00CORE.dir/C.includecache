@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../src/00CORE/00CORE.h
+../src/00CORE/../00CORE/00CORE.h
 
-../src/COREMOD_memory/COREMOD_memory.h
+../src/00CORE/../COREMOD_memory/COREMOD_memory.h
 
-../src/CommandLineInterface/CLIcore.h
+../src/00CORE/../CommandLineInterface/CLIcore.h
 stdint.h
 -
 stdio.h
@@ -32,9 +32,9 @@ gsl/gsl_rng.h
 signal.h
 -
 ImageStreamIO/ImageStruct.h
-../src/CommandLineInterface/ImageStreamIO/ImageStruct.h
+../src/00CORE/../CommandLineInterface/ImageStreamIO/ImageStruct.h
 
-../src/ImageStreamIO/ImageStruct.h
+../src/00CORE/../ImageStreamIO/ImageStruct.h
 stdint.h
 -
 stdio.h
