@@ -53,7 +53,7 @@ add_subdirectory ( "src/img_reduce" )
 add_subdirectory ( "src/psf" )
 add_subdirectory ( "src/cudacomp" )
 add_subdirectory ( "src/kdtree" )
-add_subdirectory ( "src/linARfilterPred" ) #
+add_subdirectory ( "src/linARfilterPred" ) 
 
 # main
 add_executable(milk 
@@ -71,6 +71,8 @@ target_compile_options(milk PUBLIC
 ${FFTW_CFLAGS_OTHER}
 ${FFTWF_CFLAGS_OTHER}
 -fopenmp)
+
+
 
 set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"me@me.com\\\"" )
 
@@ -108,5 +110,10 @@ ${FFTW_LIBRARIES}
 ${FFTWF_LIBRARIES}
 ${CMAKE_THREAD_LIBS_INIT}
 ${CURSES_LIBRARIES})
+
+
+if(USE_MAGMA)
+target_link_libraries (milk PUBLIC ${MAGMA_LIBRARIES})
+endif(USE_MAGMA)
 
 install(TARGETS milk DESTINATION bin)
