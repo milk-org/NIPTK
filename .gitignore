@@ -26,5 +26,6 @@ src/*/data/*
 src/*/.libs/*
 */local/
 dochtml/
-
+_cmakebuild
+_install
 build
