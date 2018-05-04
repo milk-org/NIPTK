@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,liblinopt_imtools.so -o liblinopt_imtools.so CMakeFiles/linopt_imtools.dir/linopt_imtools.c.o 

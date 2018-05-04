@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,libimage_gen.so -o libimage_gen.so CMakeFiles/image_gen.dir/image_gen.c.o 

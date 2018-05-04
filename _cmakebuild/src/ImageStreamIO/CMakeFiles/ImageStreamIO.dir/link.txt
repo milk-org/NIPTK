@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,libImageStreamIO.so -o libImageStreamIO.so CMakeFiles/ImageStreamIO.dir/ImageStreamIO.c.o 

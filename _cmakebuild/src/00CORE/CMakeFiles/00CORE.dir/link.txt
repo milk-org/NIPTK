@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,lib00CORE.so -o lib00CORE.so CMakeFiles/00CORE.dir/00CORE.c.o 

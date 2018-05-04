@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,libfft.so -o libfft.so CMakeFiles/fft.dir/fft.c.o 

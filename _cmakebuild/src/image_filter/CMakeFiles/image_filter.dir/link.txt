@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,libimage_filter.so -o libimage_filter.so CMakeFiles/image_filter.dir/image_filter.c.o 

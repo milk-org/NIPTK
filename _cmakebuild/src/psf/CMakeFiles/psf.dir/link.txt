@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,libpsf.so -o libpsf.so CMakeFiles/psf.dir/psf.c.o 

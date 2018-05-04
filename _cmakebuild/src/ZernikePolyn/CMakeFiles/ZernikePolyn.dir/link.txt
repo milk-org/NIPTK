@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,libZernikePolyn.so -o libZernikePolyn.so CMakeFiles/ZernikePolyn.dir/ZernikePolyn.c.o 

@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,libCOREMOD_iofits.so -o libCOREMOD_iofits.so CMakeFiles/COREMOD_iofits.dir/COREMOD_iofits.c.o 
