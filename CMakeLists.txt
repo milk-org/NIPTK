@@ -114,6 +114,7 @@ ${CURSES_LIBRARIES})
 
 if(USE_MAGMA)
 target_link_libraries (milk PUBLIC ${MAGMA_LIBRARIES})
+set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DHAVE_CUDA -DHAVE_MAGMA")
 endif(USE_MAGMA)
 
 install(TARGETS milk DESTINATION bin)
