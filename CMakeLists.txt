@@ -4,19 +4,30 @@
 cmake_minimum_required (VERSION 3.1)
 project (milk C)
 
-# option example
-option(USE_IMAGE_BASIC
-	"Use module image_basic" ON)
+# options
+option(USE_CUDA  "Use CUDA library"  OFF)
+option(USE_MAGMA "Use MAGAM library" OFF)
 
+
+message("====================================================")
 message("PROJECT_SOURCE_DIR  = ${PROJECT_SOURCE_DIR}")
+message("USE_CUDA            = ${USE_CUDA}")
+message("USE_MAGMA           = ${USE_MAGMA}")
+message("====================================================")
 
 
 
+if(USE_CUDA)
+find_package( CUDA REQUIRED )
+endif(USE_CUDA)
 
-# QUESTION 2: is there a more concise way to write this ?
-# using a list ?
+if(USE_MAGMA)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(MAGMA REQUIRED magma)
+message(STATUS ${MAGMA_LIBRARY_DIRS})
+link_directories( ${MAGMA_LIBRARY_DIRS} )
+endif(USE_MAGMA)
 
-# QUESTION 3: How to set up FLEX and BISON steps
 
 #                               
 # recursively add libraries to be compiled
@@ -42,7 +53,7 @@ add_subdirectory ( "src/img_reduce" )
 add_subdirectory ( "src/psf" )
 add_subdirectory ( "src/cudacomp" )
 add_subdirectory ( "src/kdtree" )
-add_subdirectory ( "src/linARfilterPred" )
+add_subdirectory ( "src/linARfilterPred" ) #
 
 # main
 add_executable(milk 

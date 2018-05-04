@@ -8,6 +8,9 @@
 #include <img_reduce/img_reduce.h>
 #include <psf/psf.h>
 #include <ZernikePolyn/ZernikePolyn.h>
+#include <linopt_imtools/linopt_imtools.h>
+#include <cudacomp/cudacomp.h>
+#include <linARfilterPred/linARfilterPred.h>
 
 
 
@@ -32,6 +35,10 @@ int main(int argc, char *argv[])
 	libinit_psf();
 	libinit_img_reduce();
 	libinit_ZernikePolyn();
+	libinit_linopt_imtools();
+	libinit_cudacomp();
+	libinit_linARfilterPred();
+
 
 	runCLI(argc, argv, AppName); // in CLIcore.c, module CommandLineInterface
 
