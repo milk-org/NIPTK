@@ -31,6 +31,10 @@ SUBDIRS += cudacomp
 milk_LDADD += cudacomp/libcudacomp.la
 milk_CPPFLAGS += -I@abs_top_srcdir@/src/cudacomp
 
+SUBDIRS += linARfilterPred
+milk_LDADD += linARfilterPred/liblinarfilterpred.la
+milk_CPPFLAGS += -I@abs_top_srcdir@/src/linARfilterPred
+
 SUBDIRS += psf
 milk_LDADD += psf/libpsf.la
 milk_CPPFLAGS += -I@abs_top_srcdir@/src/psf

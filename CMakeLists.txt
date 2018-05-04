@@ -6,8 +6,11 @@ project (milk C)
 
 # options
 option(USE_CUDA  "Use CUDA library"  OFF)
-option(USE_MAGMA "Use MAGAM library" OFF)
+option(USE_MAGMA "Use MAGMA library" OFF)
 
+if(USE_MAGMA)
+set(USE_CUDA ON)
+endif(USE_MAGMA)
 
 message("====================================================")
 message("PROJECT_SOURCE_DIR  = ${PROJECT_SOURCE_DIR}")
@@ -74,7 +77,7 @@ ${FFTWF_CFLAGS_OTHER}
 
 
 
-set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"me@me.com\\\"" )
+set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/milk-org/MILK/issues\\\"" )
 
 
 target_link_libraries (milk PUBLIC
