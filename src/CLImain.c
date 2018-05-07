@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <CommandLineInterface/CLIcore.h>
 
 
@@ -27,6 +28,20 @@ int main(int argc, char *argv[])
 	printf(STYLE_BOLD);
 	printf("\n        Multi-purpose Imaging Libraries toolKit (milk)\n");
 	printf(STYLE_NO_BOLD);
+	
+	strcpy(data.package_name, PACKAGE_NAME);
+	strcpy(data.package_version, PACKAGE_VERSION);
+	strcpy(data.sourcedir, SOURCEDIR);
+	strcpy(data.configdir, CONFIGDIR);
+
+
+	printf("\n");
+	printf("        %s version %s\n", data.package_name, data.package_version);
+	printf("        GNU General Public License v3.0\n");
+	printf("        Report bugs to : %s\n", PACKAGE_BUGREPORT);
+    printf("        Type \"help\" for instructions\n");
+	printf("        \n");
+
 	
 	
 	// initialize milk modules for which no function calls is included by default
