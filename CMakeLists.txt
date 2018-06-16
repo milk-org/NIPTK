@@ -4,10 +4,39 @@
 cmake_minimum_required (VERSION 3.1)
 project (milk C)
 
+
+
+# PERFORMANCE ORIENTED COMPILING OPTIONS
+
+# Adds options to the compiler command line for targets in the current directory and below that are added after this command is invoked
+add_compile_options(-std=gnu11)
+add_compile_options(-Ofast)
+add_compile_options(-march=native)
+
+# OpenMP
+find_package(OpenMP)
+if (OPENMP_FOUND)
+message("Found OpenMP")
+add_compile_options(-fopenmp)
+endif()
+
+
+# runs the standard link-time optimizer
+add_compile_options(-flto)
+
+# A common flag is -pipe. This flag has no effect on the generated code, but it makes the compilation process faster. It tells the compiler to use pipes instead of temporary files during the different stages of compilation, which uses more memory. On systems with low memory, GCC might get killed. In those cases do not use this flag. 
+add_compile_options(-pipe)
+
+
+
+
+
 # options
 option(USE_CUDA  "Use CUDA library"  OFF)
 option(USE_MAGMA "Use MAGMA library" OFF)
 
+
+# MAGMA (optional)
 if(USE_MAGMA)
 set(USE_CUDA ON)
 endif(USE_MAGMA)
@@ -30,6 +59,11 @@ pkg_check_modules(MAGMA REQUIRED magma)
 message(STATUS ${MAGMA_LIBRARY_DIRS})
 link_directories( ${MAGMA_LIBRARY_DIRS} )
 endif(USE_MAGMA)
+
+
+# ncurses
+SET(CURSES_USE_NCURSES TRUE)
+
 
 
 #                               
@@ -73,11 +107,14 @@ ${CURSES_INCLUDE_DIR}
 target_compile_options(milk PUBLIC 
 ${FFTW_CFLAGS_OTHER}
 ${FFTWF_CFLAGS_OTHER}
--fopenmp)
+-fopenmp
+)
 
 
+set(BUILD_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/milk-org/milk/issues\\\"" )
 
-set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/milk-org/MILK/issues\\\"" )
+
+#set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/milk-org/MILK/issues\\\"" )
 
 
 target_link_libraries (milk PUBLIC
@@ -104,20 +141,23 @@ kdtree
 linARfilterPred
 m
 readline
+ncurses
 cfitsio
 dl
 rt
-gomp
 ${GSL_LIBRARIES} 
 ${FFTW_LIBRARIES}
 ${FFTWF_LIBRARIES}
 ${CMAKE_THREAD_LIBS_INIT}
-${CURSES_LIBRARIES})
+-fopenmp
+)
 
 
 if(USE_MAGMA)
 target_link_libraries (milk PUBLIC ${MAGMA_LIBRARIES})
 set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DHAVE_CUDA -DHAVE_MAGMA")
 endif(USE_MAGMA)
+
+set_target_properties(milk PROPERTIES COMPILE_FLAGS "${BUILD_FLAGS}" )
 
 install(TARGETS milk DESTINATION bin)

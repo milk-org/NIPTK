@@ -54,7 +54,9 @@ int main(int argc, char *argv[])
 	libinit_cudacomp();
 	libinit_linARfilterPred();
 
-
+	printf("Starting CLI ...\n");
+	fflush(stdout);
+	
 	runCLI(argc, argv, AppName); // in CLIcore.c, module CommandLineInterface
 
 	return 0;
