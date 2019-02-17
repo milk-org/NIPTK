@@ -1,8 +1,23 @@
 # run from _cmakebuild directory :
 # cmake .. -DCMAKE_INSTALL_PREFIX=../_install
 
-cmake_minimum_required (VERSION 3.1)
+cmake_minimum_required (VERSION 3.5)
+
 project (milk C)
+
+# Version number
+set ( VERSION_MAJOR 0 )
+set ( VERSION_MINOR 1 )
+set ( VERSION_PATCH 01 )
+
+
+
+# Configure a header file to pass some of the CMake settings
+# to the source code
+configure_file (
+  "${PROJECT_SOURCE_DIR}/src/Config.h.in"
+  "${PROJECT_SOURCE_DIR}/src/Config.h"
+  )
 
 
 
@@ -13,6 +28,10 @@ add_compile_options(-std=gnu11)
 add_compile_options(-Ofast)
 add_compile_options(-march=native)
 
+# runs the standard link-time optimizer
+add_compile_options(-flto)
+
+
 # OpenMP
 find_package(OpenMP)
 if (OPENMP_FOUND)
@@ -20,9 +39,8 @@ message("Found OpenMP")
 add_compile_options(-fopenmp)
 endif()
 
+message("COMPILE_OPTIONS:  ${COMPILE_OPTIONS}")
 
-# runs the standard link-time optimizer
-add_compile_options(-flto)
 
 # A common flag is -pipe. This flag has no effect on the generated code, but it makes the compilation process faster. It tells the compiler to use pipes instead of temporary files during the different stages of compilation, which uses more memory. On systems with low memory, GCC might get killed. In those cases do not use this flag. 
 add_compile_options(-pipe)
@@ -41,12 +59,6 @@ if(USE_MAGMA)
 set(USE_CUDA ON)
 endif(USE_MAGMA)
 
-message("====================================================")
-message("PROJECT_SOURCE_DIR  = ${PROJECT_SOURCE_DIR}")
-message("USE_CUDA            = ${USE_CUDA}")
-message("USE_MAGMA           = ${USE_MAGMA}")
-message("====================================================")
-
 
 
 if(USE_CUDA)
@@ -63,6 +75,30 @@ endif(USE_MAGMA)
 
 # ncurses
 SET(CURSES_USE_NCURSES TRUE)
+
+
+
+
+
+
+message("====================================================")
+message("VERSION  ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}")
+message("====================================================")
+
+message("PROJECT_SOURCE_DIR       = ${PROJECT_SOURCE_DIR}")
+message("PROJECT_BINARY_DIR       = ${PROJECT_BINARY_DIR}")
+
+message("USE_CUDA                 = ${USE_CUDA}")
+
+message("USE_MAGMA                = ${USE_MAGMA}")
+if(USE_MAGMA)
+message("   MAGMA_LIBRARIES       = ${MAGMA_LIBRARIES}")
+endif(USE_MAGMA)
+
+message("EXTRAMODULES             = ${EXTRAMODULES}")
+
+message("====================================================")
+
 
 
 
@@ -92,6 +128,19 @@ add_subdirectory ( "src/cudacomp" )
 add_subdirectory ( "src/kdtree" )
 add_subdirectory ( "src/linARfilterPred" ) 
 
+
+#
+# Add extra optional modules (list provided by user)
+# separator character ";"
+#
+
+FOREACH(extramodule ${EXTRAMODULES})
+add_subdirectory ( "src/${extramodule}" )
+ENDFOREACH()
+
+
+
+
 # main
 add_executable(milk 
 src/CLImain.c)
@@ -104,6 +153,7 @@ ${FFTWF_INCLUDE_DIRS}
 ${CURSES_INCLUDE_DIR}
 )
 
+# adds the options to all targets within the directory and its sub-directories
 target_compile_options(milk PUBLIC 
 ${FFTW_CFLAGS_OTHER}
 ${FFTWF_CFLAGS_OTHER}
@@ -114,7 +164,6 @@ ${FFTWF_CFLAGS_OTHER}
 set(BUILD_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/milk-org/milk/issues\\\"" )
 
 
-#set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DPACKAGE_NAME=\\\"milk\\\" -DPACKAGE_VERSION=\\\"0.0.0\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/milk-org/MILK/issues\\\"" )
 
 
 target_link_libraries (milk PUBLIC
@@ -139,6 +188,7 @@ psf
 cudacomp 
 kdtree 
 linARfilterPred
+${EXTRAMODULES}
 m
 readline
 ncurses
@@ -159,5 +209,17 @@ set_target_properties(milk PROPERTIES COMPILE_FLAGS "-DHAVE_CUDA -DHAVE_MAGMA")
 endif(USE_MAGMA)
 
 set_target_properties(milk PROPERTIES COMPILE_FLAGS "${BUILD_FLAGS}" )
+
+
+message("====================================================")
+get_target_property(milkcompopts milk COMPILE_OPTIONS)
+
+message("BUILD_FLAGS    :  ${BUILD_FLAGS}")
+message("COMPILE_OPTIONS:  ${milkcompopts}")
+message("CMAKE_EXE_LINKER_FLAGS  :  ${CMAKE_EXE_LINKER_FLAGS}")
+message("====================================================")
+
+
+
 
 install(TARGETS milk DESTINATION bin)

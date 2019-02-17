@@ -3,6 +3,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dev branch: [![Build Status dev](https://travis-ci.org/milk-org/milk.svg?branch=dev)](https://travis-ci.org/milk-org/milk)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;master branch: [![Build Status](https://travis-ci.org/milk-org/milk.svg?branch=master)](https://travis-ci.org/milk-org/milk)
 
+
+milk version 0.1.01 (Feb 17, 2019)
+
+
 ---
 
 IMPORTANT NOTE: milk uses git submodules. Use `git clone --recursive` (see Downloading and Installing section)
