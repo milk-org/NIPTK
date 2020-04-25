@@ -1,11 +1,14 @@
 # THIS REPO IS OBSOLETE AND WILL SOON BE REMOVED
 
-Please use [milk-package](https://github.com/milk-org/milk-package)
+## Please use [milk-package](https://github.com/milk-org/milk-package)
+
+
+---
+---
 
 milk version 0.1.01 (Feb 17, 2019)
 
----
----
+
 
 IMPORTANT NOTE: milk uses git submodules. Use `git clone --recursive` (see Downloading and Installing section)
 
