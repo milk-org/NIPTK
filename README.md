@@ -1,6 +1,6 @@
 # THIS REPO IS OBSOLETE AND WILL SOON BE REMOVED
 
-Please use [milk-package](https://github.com/milk-org/milk-package)
+## Please use [milk-package](https://github.com/milk-org/milk-package)
 
 ---
 ---
